@@ -303,7 +303,7 @@ UsedLibrary="/Applications/EAGLE/lbr/Adafruit-Eagle-Library/adafruit.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="156 91 1537 908"
+Loc="153 96 1534 913"
 State=2
 Number=0
 
