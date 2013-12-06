@@ -122,14 +122,23 @@
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME2" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME3" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="-15.24" y="-17.78"/>
-<instance part="FRAME1" gate="G$2" x="157.48" y="-17.78"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
+<instance part="FRAME2" gate="G$1" x="281.94" y="0"/>
+<instance part="FRAME2" gate="G$2" x="454.66" y="0"/>
+<instance part="FRAME3" gate="G$1" x="0" y="218.44"/>
+<instance part="FRAME3" gate="G$2" x="172.72" y="218.44"/>
+<instance part="FRAME4" gate="G$1" x="281.94" y="218.44"/>
+<instance part="FRAME4" gate="G$2" x="454.66" y="218.44"/>
 </instances>
 <busses>
 </busses>
