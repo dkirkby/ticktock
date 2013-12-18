@@ -937,6 +937,64 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="tickTockLibrary">
+<packages>
+<package name="AL5802">
+<smd name="FB" x="0" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="BIAS" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="GND" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="REXT" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="OUT" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="EN" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<wire x1="1.5" y1="0.8" x2="-1.5" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.8" x2="1.5" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.8" x2="1.5" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-0.5" x2="-1.2" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-0.5" x2="-1.2" y2="-0.55" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-0.55" x2="-1.25" y2="-0.55" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-0.55" x2="-1.25" y2="-0.5" width="0.127" layer="21"/>
+<text x="-1.5" y="1.75" size="0.4064" layer="25">Name</text>
+</package>
+</packages>
+<symbols>
+<symbol name="AL5802">
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="OUT" x="-7.62" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="BIAS" x="0" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="EN" x="7.62" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="GND" x="7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="FB" x="0" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="REXT" x="-7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
+<circle x="-10.16" y="-5.08" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AL5802">
+<gates>
+<gate name="G$1" symbol="AL5802" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AL5802">
+<connects>
+<connect gate="G$1" pin="BIAS" pad="BIAS"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="REXT" pad="REXT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -955,11 +1013,23 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
 <part name="RLED" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10"/>
+<part name="U$1" library="tickTockLibrary" deviceset="AL5802" device=""/>
+<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="127" y="350.52" size="1.778" layer="91">LED current is (0.65-0.85)V / RLED</text>
+<text x="73.66" y="375.92" size="1.778" layer="91">max. LED current is
+(0.65-0.85)V / RLED
+10ohms limits to 85mA</text>
+<text x="93.98" y="411.48" size="1.778" layer="91">SE5470 IR LED
+Case = Anode = +5V
+Tab = Cathode
+max. current 100mA</text>
+<text x="73.66" y="363.22" size="1.778" layer="91">how much power will
+this need to handle?</text>
+<text x="7.62" y="373.38" size="1.778" layer="91">IR current decreases
+linearly with duty cycle</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -970,10 +1040,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="FRAME3" gate="G$2" x="172.72" y="218.44"/>
 <instance part="FRAME4" gate="G$1" x="281.94" y="218.44"/>
 <instance part="FRAME4" gate="G$2" x="454.66" y="218.44"/>
-<instance part="SUPPLY1" gate="G$1" x="55.88" y="396.24"/>
-<instance part="GND1" gate="1" x="58.42" y="337.82"/>
-<instance part="Q1" gate="G$1" x="58.42" y="350.52"/>
-<instance part="RLED" gate="G$1" x="121.92" y="350.52" rot="R90"/>
+<instance part="SUPPLY1" gate="G$1" x="60.96" y="419.1"/>
+<instance part="GND1" gate="1" x="35.56" y="383.54"/>
+<instance part="Q1" gate="G$1" x="35.56" y="398.78" smashed="yes">
+<attribute name="NAME" x="40.64" y="398.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="7.62" y="393.7" size="1.778" layer="96"/>
+</instance>
+<instance part="RLED" gate="G$1" x="68.58" y="373.38" rot="R90"/>
+<instance part="U$1" gate="G$1" x="60.96" y="396.24" rot="R180"/>
+<instance part="GND2" gate="1" x="53.34" y="360.68"/>
 </instances>
 <busses>
 </busses>
@@ -982,14 +1057,59 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="58.42" y1="345.44" x2="58.42" y2="340.36" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="393.7" x2="35.56" y2="386.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="53.34" y1="383.54" x2="53.34" y2="365.76" width="0.1524" layer="91"/>
+<pinref part="RLED" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="365.76" x2="53.34" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="368.3" x2="68.58" y2="365.76" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="365.76" x2="53.34" y2="365.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED_PWM" class="0">
+<net name="IR_PWM" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="50.8" y1="350.52" x2="33.02" y2="350.52" width="0.1524" layer="91"/>
-<label x="33.02" y="353.06" size="1.778" layer="95"/>
+<wire x1="27.94" y1="398.78" x2="10.16" y2="398.78" width="0.1524" layer="91"/>
+<label x="10.16" y="401.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
+<pinref part="U$1" gate="G$1" pin="BIAS"/>
+<wire x1="60.96" y1="419.1" x2="60.96" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="416.56" x2="60.96" y2="408.94" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="416.56" x2="91.44" y2="416.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="35.56" y1="403.86" x2="35.56" y2="411.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="411.48" x2="53.34" y2="411.48" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="EN"/>
+<wire x1="53.34" y1="411.48" x2="53.34" y2="408.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="FB"/>
+<wire x1="60.96" y1="383.54" x2="60.96" y2="378.46" width="0.1524" layer="91"/>
+<pinref part="RLED" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="378.46" x2="68.58" y2="378.46" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="REXT"/>
+<wire x1="68.58" y1="378.46" x2="68.58" y2="383.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IR_CATHODE" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="68.58" y1="408.94" x2="68.58" y2="411.48" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="411.48" x2="91.44" y2="411.48" width="0.1524" layer="91"/>
+<label x="76.2" y="408.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -997,4 +1117,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
