@@ -491,12 +491,12 @@ design rules under a new name.</description>
 <element name="RLED" library="SparkFun-Resistors" package="0805" value="10" x="13.97" y="17.78"/>
 <element name="AL5802" library="tickTockLibrary" package="AL5802" value="AL5802" x="15.24" y="12.7"/>
 <element name="PKG-CABLE" library="SparkFun-Connectors" package="MINI-DIN6" value="MINI-DIN6PTH" x="7.62" y="-1.27"/>
-<element name="C1" library="SparkFun-Capacitors" package="0805" value="1uF" x="-2.54" y="-36.83"/>
-<element name="C2" library="SparkFun-Capacitors" package="0805" value="1uF" x="-6.35" y="-36.83"/>
+<element name="MAXC1" library="SparkFun-Capacitors" package="0805" value="1uF" x="-2.54" y="-36.83"/>
+<element name="MAXC2" library="SparkFun-Capacitors" package="0805" value="1uF" x="-6.35" y="-36.83"/>
 <element name="U1" library="SparkFun-DigitalIC" package="SO016" value="MAX232SOIC16" x="-1.27" y="-43.18"/>
-<element name="C3" library="SparkFun-Capacitors" package="0805" value="1uF" x="-10.16" y="-44.45"/>
-<element name="C5" library="SparkFun-Capacitors" package="0805" value="1uF" x="-13.97" y="-44.45"/>
-<element name="C4" library="SparkFun-Capacitors" package="0805" value="1uF" x="-17.78" y="-44.45"/>
+<element name="MAXC3" library="SparkFun-Capacitors" package="0805" value="1uF" x="-10.16" y="-44.45"/>
+<element name="MAXC5" library="SparkFun-Capacitors" package="0805" value="1uF" x="-13.97" y="-44.45"/>
+<element name="MAXC4" library="SparkFun-Capacitors" package="0805" value="1uF" x="-17.78" y="-44.45"/>
 <element name="X1" library="SparkFun-Connectors" package="DB9" value="" x="-2.54" y="-63.5"/>
 </elements>
 <signals>
@@ -505,8 +505,8 @@ design rules under a new name.</description>
 <contactref element="AL5802" pad="GND"/>
 <contactref element="RLED" pad="1"/>
 <contactref element="U1" pad="15"/>
-<contactref element="C5" pad="1"/>
-<contactref element="C4" pad="2"/>
+<contactref element="MAXC5" pad="1"/>
+<contactref element="MAXC4" pad="2"/>
 <contactref element="X1" pad="5"/>
 <wire x1="-4.445" y1="-40.38" x2="3" y2="-64.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.87" y1="-44.45" x2="-4.445" y2="-40.38" width="0" layer="19" extent="1-1"/>
@@ -522,8 +522,8 @@ design rules under a new name.</description>
 <contactref element="AL5802" pad="BIAS"/>
 <contactref element="PKG-CABLE" pad="1"/>
 <contactref element="U1" pad="16"/>
-<contactref element="C3" pad="1"/>
-<contactref element="C5" pad="2"/>
+<contactref element="MAXC3" pad="1"/>
+<contactref element="MAXC5" pad="2"/>
 <wire x1="-11.06" y1="-44.45" x2="-13.07" y2="-44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.715" y1="-40.38" x2="-11.06" y2="-44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="6.32" y1="-9.77" x2="-5.715" y2="-40.38" width="0" layer="19" extent="1-1"/>
@@ -547,33 +547,33 @@ design rules under a new name.</description>
 <wire x1="8.92" y1="-9.77" x2="14.29" y2="11.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
-<contactref element="C1" pad="2"/>
+<contactref element="MAXC1" pad="2"/>
 <contactref element="U1" pad="1"/>
 <wire x1="-1.64" y1="-36.83" x2="-5.715" y2="-45.98" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
-<contactref element="C1" pad="1"/>
+<contactref element="MAXC1" pad="1"/>
 <contactref element="U1" pad="3"/>
 <wire x1="-3.44" y1="-36.83" x2="-3.175" y2="-45.98" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
-<contactref element="C2" pad="2"/>
+<contactref element="MAXC2" pad="2"/>
 <contactref element="U1" pad="4"/>
 <wire x1="-5.45" y1="-36.83" x2="-1.905" y2="-45.98" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
-<contactref element="C2" pad="1"/>
+<contactref element="MAXC2" pad="1"/>
 <contactref element="U1" pad="5"/>
 <wire x1="-7.25" y1="-36.83" x2="-0.635" y2="-45.98" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
-<contactref element="C3" pad="2"/>
+<contactref element="MAXC3" pad="2"/>
 <contactref element="U1" pad="2"/>
 <wire x1="-4.445" y1="-45.98" x2="-9.26" y2="-44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U1" pad="6"/>
-<contactref element="C4" pad="1"/>
+<contactref element="MAXC4" pad="1"/>
 <wire x1="0.635" y1="-45.98" x2="-18.68" y2="-44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RS232_TX">

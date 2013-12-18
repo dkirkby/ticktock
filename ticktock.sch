@@ -1846,15 +1846,15 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="PKG-CABLE" library="SparkFun-Connectors" deviceset="MINI-DIN6" device="PTH"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="MAXC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="MAXC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="MAX232" device="SOIC16"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="MAXC3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="MAXC5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="MAXC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="X1" library="SparkFun-Connectors" deviceset="DB9" device="FEMALE"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -1902,15 +1902,30 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 <instance part="GND2" gate="1" x="53.34" y="360.68"/>
 <instance part="PKG-CABLE" gate="G$1" x="248.92" y="408.94" rot="R180"/>
 <instance part="SUPPLY2" gate="G$1" x="210.82" y="421.64"/>
-<instance part="C1" gate="G$1" x="335.28" y="403.86" rot="R90"/>
-<instance part="C2" gate="G$1" x="335.28" y="393.7" rot="R90"/>
+<instance part="MAXC1" gate="G$1" x="335.28" y="403.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="342.519" y="407.924" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="339.979" y="402.844" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="MAXC2" gate="G$1" x="335.28" y="393.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="342.519" y="397.764" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="339.979" y="392.684" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="SUPPLY3" gate="G$1" x="360.68" y="419.1"/>
 <instance part="U1" gate="G$1" x="358.14" y="391.16"/>
 <instance part="GND3" gate="1" x="360.68" y="353.06"/>
-<instance part="C3" gate="G$1" x="381" y="414.02" rot="R90"/>
-<instance part="C5" gate="G$1" x="320.04" y="414.02" rot="R90"/>
+<instance part="MAXC3" gate="G$1" x="381" y="414.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="378.079" y="415.544" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="383.159" y="415.544" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="MAXC5" gate="G$1" x="320.04" y="414.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="317.119" y="415.544" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="322.199" y="415.544" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="GND4" gate="1" x="312.42" y="406.4"/>
-<instance part="C4" gate="G$1" x="391.16" y="396.24" rot="R90"/>
+<instance part="MAXC4" gate="G$1" x="391.16" y="396.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="388.239" y="397.764" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="393.319" y="397.764" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="GND5" gate="1" x="396.24" y="388.62"/>
 <instance part="X1" gate="G$1" x="431.8" y="381"/>
 <instance part="GND6" gate="1" x="419.1" y="368.3"/>
@@ -1939,13 +1954,13 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 <wire x1="360.68" y1="368.3" x2="360.68" y2="355.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="MAXC5" gate="G$1" pin="1"/>
 <wire x1="314.96" y1="414.02" x2="312.42" y2="414.02" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="312.42" y1="414.02" x2="312.42" y2="408.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="MAXC4" gate="G$1" pin="2"/>
 <wire x1="393.7" y1="396.24" x2="396.24" y2="396.24" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="396.24" y1="396.24" x2="396.24" y2="391.16" width="0.1524" layer="91"/>
@@ -1982,11 +1997,11 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="360.68" y1="419.1" x2="360.68" y2="414.02" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="MAXC3" gate="G$1" pin="1"/>
 <wire x1="360.68" y1="414.02" x2="360.68" y2="411.48" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="414.02" x2="360.68" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="414.02" x2="322.58" y2="414.02" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="MAXC5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2023,14 +2038,14 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="MAXC1" gate="G$1" pin="2"/>
 <wire x1="342.9" y1="403.86" x2="337.82" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C1+"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="MAXC1" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="403.86" x2="327.66" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="403.86" x2="327.66" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="398.78" x2="342.9" y2="398.78" width="0.1524" layer="91"/>
@@ -2039,14 +2054,14 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="MAXC2" gate="G$1" pin="2"/>
 <wire x1="342.9" y1="393.7" x2="337.82" y2="393.7" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="C2+"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="MAXC2" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="393.7" x2="327.66" y2="393.7" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="393.7" x2="327.66" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="388.62" x2="342.9" y2="388.62" width="0.1524" layer="91"/>
@@ -2055,7 +2070,7 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="MAXC3" gate="G$1" pin="2"/>
 <wire x1="383.54" y1="414.02" x2="386.08" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="414.02" x2="386.08" y2="401.32" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="V+"/>
@@ -2065,7 +2080,7 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 <net name="N$9" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="V-"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="MAXC4" gate="G$1" pin="1"/>
 <wire x1="378.46" y1="396.24" x2="386.08" y2="396.24" width="0.1524" layer="91"/>
 </segment>
 </net>
