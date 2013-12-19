@@ -373,54 +373,6 @@ High-power, low thermal resistance package.</description>
 <text x="3.175" y="0.635" size="0.4064" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIODE-ZENER">
-<wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="0" x2="1.778" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.778" y1="0" x2="-1.778" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="0" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.778" y1="0" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.778" y1="0.762" x2="1.778" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.556" y="0" drill="0.9"/>
-<pad name="P$2" x="3.556" y="0" drill="0.9"/>
-<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.397" y="-0.508" size="0.4064" layer="21">&gt;Value</text>
-</package>
-<package name="SMB-DIODE">
-<description>&lt;b&gt;Diode&lt;/b&gt;&lt;p&gt;
-Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</description>
-<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.1016" layer="21"/>
-<wire x1="-2.261" y1="-1.905" x2="-2.261" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="2.261" y1="-1.905" x2="2.261" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="0.643" y1="1" x2="-0.73" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.73" y1="0" x2="0.643" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.643" y1="-1" x2="0.643" y2="1" width="0.2032" layer="21"/>
-<wire x1="-0.73" y1="1" x2="-0.73" y2="-1" width="0.2032" layer="21"/>
-<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
-<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
-</package>
-<package name="SOD-323">
-<wire x1="-0.9" y1="0.65" x2="-0.5" y2="0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.65" x2="0.9" y2="0.65" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
-<smd name="1" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<smd name="2" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
-<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="MOSFET-NCHANNEL-1">
@@ -463,19 +415,6 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <text x="-1.27" y="2.54" size="0.8128" layer="93">D</text>
 <text x="-1.27" y="-3.556" size="0.8128" layer="93">S</text>
 <text x="-5.08" y="-1.27" size="0.8128" layer="93">G</text>
-</symbol>
-<symbol name="DIODE-ZENER">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.778" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -596,43 +535,6 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="2"/>
 <connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIODE-ZENER">
-<description>Zener Diode
-Production Part - 8199
-3.4V Zener Voltage</description>
-<gates>
-<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="DIODE-ZENER">
-<connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="C" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMB" package="SMB-DIODE">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-BZT52" package="SOD-323">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5368,12 +5270,18 @@ Upgrade for LT1394 and LT1016 Designs</description>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 <part name="IC2" library="analog-devices" deviceset="AD8611" device="R"/>
 <part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
-<part name="GPZ1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="SMB" value="1N5712"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GPR2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="RFB" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="??"/>
+<part name="CFB" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="??"/>
+<part name="AMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5413,6 +5321,9 @@ Jumper 2-3 for LOCAL</text>
 100us pulse width</text>
 <text x="320.04" y="320.04" size="1.778" layer="91">1.1-1.8 Vpp into 50ohms
 sinusoidal</text>
+<text x="91.44" y="314.96" size="1.778" layer="91">OPA381 MSOP-8</text>
+<text x="35.56" y="322.58" size="1.778" layer="91">cathode to IN-
+anode to IN+ = GND</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5520,12 +5431,24 @@ sinusoidal</text>
 <instance part="JP2" gate="G$1" x="261.62" y="91.44" rot="R180"/>
 <instance part="IC2" gate="G$1" x="388.62" y="325.12"/>
 <instance part="GPR1" gate="G$1" x="373.38" y="320.04" rot="R270"/>
-<instance part="GPZ1" gate="G$1" x="365.76" y="317.5" rot="R90"/>
 <instance part="GND17" gate="1" x="378.46" y="302.26"/>
 <instance part="GND18" gate="1" x="386.08" y="302.26"/>
 <instance part="SUPPLY16" gate="G$1" x="386.08" y="345.44"/>
 <instance part="GPR2" gate="G$1" x="330.2" y="259.08" rot="R270"/>
 <instance part="GND19" gate="1" x="330.2" y="246.38"/>
+<instance part="GND20" gate="1" x="83.82" y="297.18"/>
+<instance part="SUPPLY17" gate="G$1" x="83.82" y="340.36"/>
+<instance part="SUPPLY18" gate="G$1" x="71.12" y="304.8"/>
+<instance part="RFB" gate="G$1" x="101.6" y="350.52" rot="R180"/>
+<instance part="CFB" gate="G$1" x="104.14" y="340.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="101.219" y="341.884" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="106.299" y="341.884" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="AMPC1" gate="G$1" x="78.74" y="302.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="75.819" y="303.784" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="80.899" y="303.784" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND21" gate="1" x="73.66" y="320.04"/>
 </instances>
 <busses>
 </busses>
@@ -5656,12 +5579,9 @@ sinusoidal</text>
 <wire x1="378.46" y1="312.42" x2="378.46" y2="322.58" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="IN-"/>
 <wire x1="378.46" y1="322.58" x2="381" y2="322.58" width="0.1524" layer="91"/>
-<pinref part="GPZ1" gate="G$1" pin="A"/>
-<wire x1="365.76" y1="314.96" x2="365.76" y2="312.42" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="312.42" x2="373.38" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="378.46" y1="312.42" x2="378.46" y2="304.8" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="312.42" x2="307.34" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="312.42" x2="307.34" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="GPS_10MHZ_IN" gate="G$1" pin="GND"/>
 <wire x1="307.34" y1="312.42" x2="307.34" y2="322.58" width="0.1524" layer="91"/>
 </segment>
@@ -5685,6 +5605,18 @@ sinusoidal</text>
 <wire x1="307.34" y1="251.46" x2="307.34" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="330.2" y1="248.92" x2="330.2" y2="251.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="83.82" y1="322.58" x2="83.82" y2="302.26" width="0.1524" layer="91"/>
+<pinref part="AMPC1" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="302.26" x2="83.82" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="302.26" x2="83.82" y2="302.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="78.74" y1="327.66" x2="73.66" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="327.66" x2="73.66" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="IR_PWM" class="0">
@@ -5794,6 +5726,16 @@ sinusoidal</text>
 <pinref part="IC2" gate="G$1" pin="V+"/>
 <pinref part="SUPPLY16" gate="G$1" pin="5V"/>
 <wire x1="386.08" y1="340.36" x2="386.08" y2="345.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY17" gate="G$1" pin="5V"/>
+<wire x1="83.82" y1="340.36" x2="83.82" y2="337.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY18" gate="G$1" pin="5V"/>
+<wire x1="71.12" y1="304.8" x2="71.12" y2="302.26" width="0.1524" layer="91"/>
+<pinref part="AMPC1" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="302.26" x2="73.66" y2="302.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5922,15 +5864,12 @@ sinusoidal</text>
 <net name="GPS_10MHZ" class="0">
 <segment>
 <pinref part="GPS_10MHZ_IN" gate="G$1" pin="OUT"/>
-<wire x1="312.42" y1="327.66" x2="365.76" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="327.66" x2="373.38" y2="327.66" width="0.1524" layer="91"/>
 <label x="347.98" y="330.2" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="IN+"/>
 <pinref part="GPR1" gate="G$1" pin="1"/>
-<wire x1="365.76" y1="327.66" x2="373.38" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="327.66" x2="381" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="327.66" x2="373.38" y2="325.12" width="0.1524" layer="91"/>
-<pinref part="GPZ1" gate="G$1" pin="C"/>
-<wire x1="365.76" y1="320.04" x2="365.76" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -6106,6 +6045,33 @@ sinusoidal</text>
 <pinref part="IC2" gate="G$1" pin="OUT"/>
 <wire x1="401.32" y1="327.66" x2="426.72" y2="327.66" width="0.1524" layer="91"/>
 <label x="426.72" y="327.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD_AMP_OUT" class="0">
+<segment>
+<wire x1="93.98" y1="330.2" x2="111.76" y2="330.2" width="0.1524" layer="91"/>
+<pinref part="CFB" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="330.2" x2="142.24" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="340.36" x2="111.76" y2="340.36" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="340.36" x2="111.76" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="340.36" x2="111.76" y2="350.52" width="0.1524" layer="91"/>
+<pinref part="RFB" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="350.52" x2="106.68" y2="350.52" width="0.1524" layer="91"/>
+<label x="144.78" y="332.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD_CATHODE" class="0">
+<segment>
+<pinref part="CFB" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="340.36" x2="93.98" y2="340.36" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="340.36" x2="93.98" y2="350.52" width="0.1524" layer="91"/>
+<pinref part="RFB" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="350.52" x2="96.52" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="350.52" x2="73.66" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="350.52" x2="73.66" y2="332.74" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="332.74" x2="78.74" y2="332.74" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="332.74" x2="55.88" y2="332.74" width="0.1524" layer="91"/>
+<label x="53.34" y="335.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
