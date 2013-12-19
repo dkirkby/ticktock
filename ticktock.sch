@@ -373,6 +373,54 @@ High-power, low thermal resistance package.</description>
 <text x="3.175" y="0.635" size="0.4064" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DIODE-ZENER">
+<wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="0" x2="1.778" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-1.778" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="0.762" x2="1.778" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.556" y="0" drill="0.9"/>
+<pad name="P$2" x="3.556" y="0" drill="0.9"/>
+<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.397" y="-0.508" size="0.4064" layer="21">&gt;Value</text>
+</package>
+<package name="SMB-DIODE">
+<description>&lt;b&gt;Diode&lt;/b&gt;&lt;p&gt;
+Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</description>
+<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.1016" layer="21"/>
+<wire x1="-2.261" y1="-1.905" x2="-2.261" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="2.261" y1="-1.905" x2="2.261" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="0.643" y1="1" x2="-0.73" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.73" y1="0" x2="0.643" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.643" y1="-1" x2="0.643" y2="1" width="0.2032" layer="21"/>
+<wire x1="-0.73" y1="1" x2="-0.73" y2="-1" width="0.2032" layer="21"/>
+<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
+<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
+</package>
+<package name="SOD-323">
+<wire x1="-0.9" y1="0.65" x2="-0.5" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.65" x2="0.9" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
+<smd name="1" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<smd name="2" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
+<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET-NCHANNEL-1">
@@ -415,6 +463,19 @@ High-power, low thermal resistance package.</description>
 <text x="-1.27" y="2.54" size="0.8128" layer="93">D</text>
 <text x="-1.27" y="-3.556" size="0.8128" layer="93">S</text>
 <text x="-5.08" y="-1.27" size="0.8128" layer="93">G</text>
+</symbol>
+<symbol name="DIODE-ZENER">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.778" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -535,6 +596,43 @@ High-power, low thermal resistance package.</description>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="2"/>
 <connect gate="G$1" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE-ZENER">
+<description>Zener Diode
+Production Part - 8199
+3.4V Zener Voltage</description>
+<gates>
+<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="DIODE-ZENER">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMB" package="SMB-DIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BZT52" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5064,6 +5162,137 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
+<library name="analog-devices">
+<description>&lt;b&gt;Analog Devices Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SO8">
+<description>&lt;b&gt;8-Lead Small Outline IC&lt;/b&gt; (SO-8)&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+<package name="MSOP08">
+<description>&lt;b&gt;8-Lead micro SO&lt;/b&gt; (RM-8)&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
+<wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.1524" layer="21"/>
+<wire x1="1.299" y1="1.624" x2="1.624" y2="1.299" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.626" y1="1.299" x2="-1.301" y2="1.624" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.301" y2="-1.626" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.299" y1="-1.626" x2="1.624" y2="-1.301" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.341" y1="-1.626" x2="1.299" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="-1.301" y1="1.624" x2="1.299" y2="1.624" width="0.1524" layer="21"/>
+<circle x="-1.0456" y="-1.0406" radius="0.2448" width="0.0508" layer="21"/>
+<smd name="8" x="-0.976" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="7" x="-0.326" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="6" x="0.324" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="5" x="0.974" y="2.262" dx="0.4" dy="1" layer="1"/>
+<smd name="4" x="0.974" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<smd name="3" x="0.324" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<smd name="2" x="-0.326" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<smd name="1" x="-0.976" y="-2.263" dx="0.4" dy="1" layer="1"/>
+<text x="-2.032" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.0975" y1="1.65" x2="-0.8537" y2="2.5057" layer="51"/>
+<rectangle x1="-0.4475" y1="1.65" x2="-0.2037" y2="2.5057" layer="51"/>
+<rectangle x1="0.2025" y1="1.65" x2="0.4463" y2="2.5057" layer="51"/>
+<rectangle x1="0.8525" y1="1.65" x2="1.0963" y2="2.5057" layer="51"/>
+<rectangle x1="-1.0975" y1="-2.5069" x2="-0.8537" y2="-1.65" layer="51"/>
+<rectangle x1="-0.4475" y1="-2.5069" x2="-0.2037" y2="-1.65" layer="51"/>
+<rectangle x1="0.2025" y1="-2.5069" x2="0.4463" y2="-1.65" layer="51"/>
+<rectangle x1="0.8525" y1="-2.5069" x2="1.0963" y2="-1.65" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AD8611">
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<text x="5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0.508" y="-8.89" size="1.27" layer="96" rot="R90">GND</text>
+<text x="-3.048" y="11.176" size="1.27" layer="96" rot="R270">V+</text>
+<text x="-2.032" y="-11.176" size="1.27" layer="96" rot="R90">V-</text>
+<text x="3.048" y="-6.096" size="1.27" layer="96" rot="R90">L</text>
+<text x="-3.81" y="1.778" size="1.27" layer="96">+</text>
+<text x="-3.81" y="-3.048" size="1.27" layer="96">-</text>
+<pin name="IN+" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="IN-" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!OUT" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="V+" x="-2.54" y="15.24" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="V-" x="-2.54" y="-15.24" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="L" x="2.54" y="-12.7" visible="pad" length="middle" direction="in" rot="R90"/>
+<pin name="GND" x="0" y="-15.24" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AD8611" prefix="IC">
+<description>&lt;b&gt;Ultrafast 4 ns Single Supply Comparators&lt;/b&gt;&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf&lt;br&gt;
+Upgrade for LT1394 and LT1016 Designs</description>
+<gates>
+<gate name="G$1" symbol="AD8611" x="0" y="0"/>
+</gates>
+<devices>
+<device name="R" package="SO8">
+<connects>
+<connect gate="G$1" pin="!OUT" pad="8"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="IN+" pad="2"/>
+<connect gate="G$1" pin="IN-" pad="3"/>
+<connect gate="G$1" pin="L" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RM" package="MSOP08">
+<connects>
+<connect gate="G$1" pin="!OUT" pad="8"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="IN+" pad="2"/>
+<connect gate="G$1" pin="IN-" pad="3"/>
+<connect gate="G$1" pin="L" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5137,6 +5366,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ATC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.01uF"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="IC2" library="analog-devices" deviceset="AD8611" device="R"/>
+<part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="GPZ1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="SMB" value="1N5712"/>
+<part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5172,6 +5407,10 @@ See Fig 9-4</text>
 <text x="129.54" y="198.12" size="1.778" layer="91">See http://sanguino.cc/1-0kitassembly</text>
 <text x="238.76" y="99.06" size="1.778" layer="91">Jumper 1-2 for GPS
 Jumper 2-3 for LOCAL</text>
+<text x="320.04" y="259.08" size="1.778" layer="91">0.0-2.4V (+-10%) into 50ohms
+100us pulse width</text>
+<text x="320.04" y="320.04" size="1.778" layer="91">1.1-1.8 Vpp into 50ohms
+sinusoidal</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5221,7 +5460,7 @@ Jumper 2-3 for LOCAL</text>
 <instance part="X1" gate="G$1" x="431.8" y="381"/>
 <instance part="GND6" gate="1" x="419.1" y="368.3"/>
 <instance part="GPS_10MHZ_IN" gate="G$1" x="307.34" y="327.66"/>
-<instance part="GPS_1PPS_IN" gate="G$1" x="307.34" y="302.26"/>
+<instance part="GPS_1PPS_IN" gate="G$1" x="307.34" y="266.7"/>
 <instance part="IC1" gate="G$1" x="139.7" y="144.78"/>
 <instance part="U3" gate="G$1" x="73.66" y="43.18"/>
 <instance part="JP1" gate="G$1" x="20.32" y="50.8" rot="R270"/>
@@ -5277,6 +5516,12 @@ Jumper 2-3 for LOCAL</text>
 <attribute name="VALUE" x="219.456" y="60.579" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="JP2" gate="G$1" x="261.62" y="91.44" rot="R180"/>
+<instance part="IC2" gate="G$1" x="388.62" y="325.12"/>
+<instance part="GPR1" gate="G$1" x="373.38" y="320.04" rot="R270"/>
+<instance part="GPZ1" gate="G$1" x="365.76" y="317.5" rot="R90"/>
+<instance part="GND17" gate="1" x="378.46" y="302.26"/>
+<instance part="GND18" gate="1" x="386.08" y="302.26"/>
+<instance part="SUPPLY16" gate="G$1" x="386.08" y="345.44"/>
 </instances>
 <busses>
 </busses>
@@ -5400,6 +5645,34 @@ Jumper 2-3 for LOCAL</text>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="220.98" y1="53.34" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GPR1" gate="G$1" pin="2"/>
+<wire x1="373.38" y1="314.96" x2="373.38" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="312.42" x2="378.46" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="312.42" x2="378.46" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="IN-"/>
+<wire x1="378.46" y1="322.58" x2="381" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="GPZ1" gate="G$1" pin="A"/>
+<wire x1="365.76" y1="314.96" x2="365.76" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="312.42" x2="373.38" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="378.46" y1="312.42" x2="378.46" y2="304.8" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="312.42" x2="307.34" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="GPS_10MHZ_IN" gate="G$1" pin="GND"/>
+<wire x1="307.34" y1="312.42" x2="307.34" y2="322.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="IC2" gate="G$1" pin="V-"/>
+<wire x1="386.08" y1="304.8" x2="386.08" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<wire x1="386.08" y1="307.34" x2="386.08" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="309.88" x2="388.62" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="307.34" x2="386.08" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="L"/>
+<wire x1="391.16" y1="312.42" x2="391.16" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="307.34" x2="388.62" y2="307.34" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="IR_PWM" class="0">
 <segment>
@@ -5503,6 +5776,11 @@ Jumper 2-3 for LOCAL</text>
 <wire x1="223.52" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="ATC4" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="63.5" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="V+"/>
+<pinref part="SUPPLY16" gate="G$1" pin="5V"/>
+<wire x1="386.08" y1="340.36" x2="386.08" y2="345.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5616,15 +5894,27 @@ Jumper 2-3 for LOCAL</text>
 <net name="GPS_1PPS" class="0">
 <segment>
 <pinref part="GPS_1PPS_IN" gate="G$1" pin="OUT"/>
-<wire x1="312.42" y1="302.26" x2="353.06" y2="302.26" width="0.1524" layer="91"/>
-<label x="347.98" y="304.8" size="1.778" layer="95"/>
+<wire x1="312.42" y1="266.7" x2="353.06" y2="266.7" width="0.1524" layer="91"/>
+<label x="347.98" y="269.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT30/OC2B/ICP)PD6"/>
+<wire x1="165.1" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
+<label x="187.96" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPS_10MHZ" class="0">
 <segment>
 <pinref part="GPS_10MHZ_IN" gate="G$1" pin="OUT"/>
-<wire x1="312.42" y1="327.66" x2="353.06" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="327.66" x2="365.76" y2="327.66" width="0.1524" layer="91"/>
 <label x="347.98" y="330.2" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="IN+"/>
+<pinref part="GPR1" gate="G$1" pin="1"/>
+<wire x1="365.76" y1="327.66" x2="373.38" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="327.66" x2="381" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="327.66" x2="373.38" y2="325.12" width="0.1524" layer="91"/>
+<pinref part="GPZ1" gate="G$1" pin="C"/>
+<wire x1="365.76" y1="320.04" x2="365.76" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5795,6 +6085,11 @@ Jumper 2-3 for LOCAL</text>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="254" y1="93.98" x2="236.22" y2="93.98" width="0.1524" layer="91"/>
 <label x="228.6" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
+<wire x1="401.32" y1="327.66" x2="426.72" y2="327.66" width="0.1524" layer="91"/>
+<label x="426.72" y="327.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
