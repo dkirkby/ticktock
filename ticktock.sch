@@ -5367,11 +5367,13 @@ Upgrade for LT1394 and LT1016 Designs</description>
 <part name="ATC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.01uF"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 <part name="IC2" library="analog-devices" deviceset="AD8611" device="R"/>
-<part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
 <part name="GPZ1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="SMB" value="1N5712"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="GPR2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
+<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5407,7 +5409,7 @@ See Fig 9-4</text>
 <text x="129.54" y="198.12" size="1.778" layer="91">See http://sanguino.cc/1-0kitassembly</text>
 <text x="238.76" y="99.06" size="1.778" layer="91">Jumper 1-2 for GPS
 Jumper 2-3 for LOCAL</text>
-<text x="320.04" y="259.08" size="1.778" layer="91">0.0-2.4V (+-10%) into 50ohms
+<text x="342.9" y="259.08" size="1.778" layer="91">0.0-2.4V (+-10%) into 50ohms
 100us pulse width</text>
 <text x="320.04" y="320.04" size="1.778" layer="91">1.1-1.8 Vpp into 50ohms
 sinusoidal</text>
@@ -5522,6 +5524,8 @@ sinusoidal</text>
 <instance part="GND17" gate="1" x="378.46" y="302.26"/>
 <instance part="GND18" gate="1" x="386.08" y="302.26"/>
 <instance part="SUPPLY16" gate="G$1" x="386.08" y="345.44"/>
+<instance part="GPR2" gate="G$1" x="330.2" y="259.08" rot="R270"/>
+<instance part="GND19" gate="1" x="330.2" y="246.38"/>
 </instances>
 <busses>
 </busses>
@@ -5672,6 +5676,15 @@ sinusoidal</text>
 <pinref part="IC2" gate="G$1" pin="L"/>
 <wire x1="391.16" y1="312.42" x2="391.16" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="307.34" x2="388.62" y2="307.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GPR2" gate="G$1" pin="2"/>
+<wire x1="330.2" y1="254" x2="330.2" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="251.46" x2="307.34" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="GPS_1PPS_IN" gate="G$1" pin="GND"/>
+<wire x1="307.34" y1="251.46" x2="307.34" y2="261.62" width="0.1524" layer="91"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="330.2" y1="248.92" x2="330.2" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IR_PWM" class="0">
@@ -5894,8 +5907,11 @@ sinusoidal</text>
 <net name="GPS_1PPS" class="0">
 <segment>
 <pinref part="GPS_1PPS_IN" gate="G$1" pin="OUT"/>
-<wire x1="312.42" y1="266.7" x2="353.06" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="266.7" x2="330.2" y2="266.7" width="0.1524" layer="91"/>
 <label x="347.98" y="269.24" size="1.778" layer="95"/>
+<pinref part="GPR2" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="266.7" x2="353.06" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="266.7" x2="330.2" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT30/OC2B/ICP)PD6"/>
