@@ -6981,13 +6981,13 @@ otherwise 100uA</text>
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PKG-CABLE" gate="G$1" pin="4"/>
-<wire x1="243.84" y1="406.4" x2="210.82" y2="406.4" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="406.4" x2="210.82" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="PKG-CABLE" gate="G$1" pin="5"/>
-<wire x1="210.82" y1="403.86" x2="210.82" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="403.86" x2="210.82" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="401.32" x2="210.82" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="403.86" x2="210.82" y2="403.86" width="0.1524" layer="91"/>
+<pinref part="PKG-CABLE" gate="G$1" pin="6"/>
+<wire x1="243.84" y1="401.32" x2="210.82" y2="401.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -7556,13 +7556,6 @@ otherwise 100uA</text>
 </net>
 <net name="VTEMP" class="0">
 <segment>
-<pinref part="PKG-CABLE" gate="G$1" pin="6"/>
-<wire x1="243.84" y1="401.32" x2="228.6" y2="401.32" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="401.32" x2="228.6" y2="381" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="381" x2="198.12" y2="381" width="0.1524" layer="91"/>
-<label x="190.5" y="381" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC3" gate="G$1" pin="I1L"/>
 <wire x1="396.24" y1="71.12" x2="416.56" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="1" pin="1"/>
@@ -7577,6 +7570,11 @@ otherwise 100uA</text>
 <label x="190.5" y="177.8" size="1.778" layer="95"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="190.5" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PKG-CABLE" gate="G$1" pin="4"/>
+<wire x1="243.84" y1="406.4" x2="198.12" y2="406.4" width="0.1524" layer="91"/>
+<label x="180.34" y="406.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
