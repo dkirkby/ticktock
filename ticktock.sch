@@ -5744,6 +5744,22 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="SJ3" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS138"/>
+<part name="BMPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="BMPR2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS138"/>
+<part name="BMPR3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="BMPR4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="BMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="SUPPLY22" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="SUPPLY27" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5790,11 +5806,11 @@ anode to IN+ = GND</text>
 TAB = anode = IN+ (GND)
 CASE = cathode = IN-</text>
 <text x="182.88" y="398.78" size="1.778" layer="91">PD_CATHODE = GND</text>
-<text x="347.98" y="99.06" size="1.778" layer="91">jumper for best DC performance
+<text x="363.22" y="48.26" size="1.778" layer="91">jumper for best DC performance
 leave open for best AC performance</text>
-<text x="396.24" y="111.76" size="1.778" layer="91">jumper SJ2 &amp; SJ3 for 200uA
+<text x="411.48" y="60.96" size="1.778" layer="91">jumper SJ2 &amp; SJ3 for 200uA
 otherwise 100uA</text>
-<text x="421.64" y="134.62" size="1.778" layer="91">5V full scale at
+<text x="436.88" y="83.82" size="1.778" layer="91">5V full scale at
 25K (100uA)
 50K (200uA)</text>
 </plain>
@@ -5924,13 +5940,38 @@ otherwise 100uA</text>
 <instance part="GND21" gate="1" x="88.9" y="266.7"/>
 <instance part="U$1" gate="G$1" x="109.22" y="281.94"/>
 <instance part="GND22" gate="1" x="210.82" y="396.24"/>
-<instance part="U4" gate="G$1" x="365.76" y="172.72"/>
-<instance part="IC3" gate="G$1" x="368.3" y="119.38"/>
-<instance part="SJ1" gate="1" x="345.44" y="106.68" rot="R90"/>
-<instance part="GND23" gate="1" x="345.44" y="96.52"/>
-<instance part="SJ2" gate="1" x="345.44" y="119.38" rot="R180"/>
-<instance part="SJ3" gate="1" x="391.16" y="119.38" rot="R180"/>
-<instance part="SUPPLY19" gate="G$1" x="337.82" y="139.7"/>
+<instance part="U4" gate="G$1" x="373.38" y="142.24" rot="R180"/>
+<instance part="IC3" gate="G$1" x="383.54" y="68.58"/>
+<instance part="SJ1" gate="1" x="360.68" y="55.88" rot="R90"/>
+<instance part="GND23" gate="1" x="360.68" y="45.72"/>
+<instance part="SJ2" gate="1" x="360.68" y="68.58" rot="R180"/>
+<instance part="SJ3" gate="1" x="406.4" y="68.58" rot="R180"/>
+<instance part="SUPPLY19" gate="G$1" x="353.06" y="88.9"/>
+<instance part="Q2" gate="G$1" x="414.02" y="144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="408.94" y="149.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="416.56" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="BMPR1" gate="G$1" x="398.78" y="160.02" rot="R270"/>
+<instance part="BMPR2" gate="G$1" x="429.26" y="160.02" rot="R270"/>
+<instance part="Q3" gate="G$1" x="472.44" y="139.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="467.36" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="474.98" y="144.78" size="1.778" layer="96"/>
+</instance>
+<instance part="BMPR3" gate="G$1" x="457.2" y="154.94" rot="R270"/>
+<instance part="BMPR4" gate="G$1" x="487.68" y="154.94" rot="R270"/>
+<instance part="SUPPLY20" gate="G$1" x="398.78" y="170.18"/>
+<instance part="SUPPLY21" gate="G$1" x="398.78" y="170.18"/>
+<instance part="SUPPLY23" gate="G$1" x="457.2" y="170.18"/>
+<instance part="SUPPLY25" gate="G$1" x="342.9" y="170.18"/>
+<instance part="GND24" gate="1" x="365.76" y="154.94"/>
+<instance part="BMPC1" gate="G$1" x="350.52" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="357.759" y="166.624" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="355.219" y="161.544" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY22" gate="G$1" x="414.02" y="170.18"/>
+<instance part="SUPPLY24" gate="G$1" x="472.44" y="170.18"/>
+<instance part="SUPPLY26" gate="G$1" x="429.26" y="180.34"/>
+<instance part="SUPPLY27" gate="G$1" x="487.68" y="180.34"/>
 </instances>
 <busses>
 </busses>
@@ -6112,7 +6153,17 @@ otherwise 100uA</text>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="SJ1" gate="1" pin="1"/>
-<wire x1="345.44" y1="99.06" x2="345.44" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="48.26" x2="360.68" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<wire x1="358.14" y1="147.32" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="147.32" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="162.56" x2="365.76" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="162.56" x2="365.76" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<pinref part="BMPC1" gate="G$1" pin="2"/>
+<wire x1="353.06" y1="162.56" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IR_PWM" class="0">
@@ -6235,12 +6286,22 @@ otherwise 100uA</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="I1H"/>
-<wire x1="353.06" y1="121.92" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="121.92" x2="337.82" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="71.12" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="71.12" x2="353.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="340.36" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="119.38" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="68.58" x2="353.06" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="68.58" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY19" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="BMPR2" gate="G$1" pin="1"/>
+<pinref part="SUPPLY26" gate="G$1" pin="5V"/>
+<wire x1="429.26" y1="165.1" x2="429.26" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BMPR4" gate="G$1" pin="1"/>
+<pinref part="SUPPLY27" gate="G$1" pin="5V"/>
+<wire x1="487.68" y1="160.02" x2="487.68" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6429,6 +6490,39 @@ otherwise 100uA</text>
 <pinref part="FTC3" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="38.1" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
+<pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
+<pinref part="BMPR1" gate="G$1" pin="1"/>
+<wire x1="398.78" y1="170.18" x2="398.78" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY23" gate="G$1" pin="3.3V"/>
+<pinref part="BMPR3" gate="G$1" pin="1"/>
+<wire x1="457.2" y1="170.18" x2="457.2" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="VDD"/>
+<wire x1="358.14" y1="137.16" x2="342.9" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="137.16" x2="342.9" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="VDDIO"/>
+<wire x1="342.9" y1="142.24" x2="342.9" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="162.56" x2="342.9" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="142.24" x2="342.9" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
+<pinref part="BMPC1" gate="G$1" pin="1"/>
+<wire x1="345.44" y1="162.56" x2="342.9" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<pinref part="SUPPLY22" gate="G$1" pin="3.3V"/>
+<wire x1="414.02" y1="152.4" x2="414.02" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
+<wire x1="472.44" y1="147.32" x2="472.44" y2="170.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USB_DTR" class="0">
 <segment>
@@ -6597,34 +6691,74 @@ otherwise 100uA</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="I1L"/>
-<wire x1="381" y1="121.92" x2="401.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="71.12" x2="416.56" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="1" pin="1"/>
-<wire x1="401.32" y1="121.92" x2="424.18" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="396.24" y1="119.38" x2="401.32" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="119.38" x2="401.32" y2="121.92" width="0.1524" layer="91"/>
-<label x="424.18" y="121.92" size="1.778" layer="95"/>
+<wire x1="416.56" y1="71.12" x2="439.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="68.58" x2="416.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="68.58" x2="416.56" y2="71.12" width="0.1524" layer="91"/>
+<label x="439.42" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="SJ1" gate="1" pin="2"/>
-<wire x1="345.44" y1="111.76" x2="345.44" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="60.96" x2="360.68" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="SUBST"/>
-<wire x1="345.44" y1="114.3" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="63.5" x2="368.3" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="I2H"/>
 <pinref part="SJ2" gate="1" pin="1"/>
-<wire x1="353.06" y1="119.38" x2="350.52" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="68.58" x2="365.76" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="I2L"/>
 <pinref part="SJ3" gate="1" pin="2"/>
-<wire x1="381" y1="119.38" x2="386.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="68.58" x2="401.32" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="BMPR1" gate="G$1" pin="2"/>
+<wire x1="398.78" y1="154.94" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="398.78" y1="144.78" x2="408.94" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="SCL"/>
+<wire x1="388.62" y1="144.78" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="I2C_SCL" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="419.1" y1="144.78" x2="429.26" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="BMPR2" gate="G$1" pin="2"/>
+<wire x1="429.26" y1="144.78" x2="429.26" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="429.26" y1="144.78" x2="449.58" y2="144.78" width="0.1524" layer="91"/>
+<label x="444.5" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="BMPR3" gate="G$1" pin="2"/>
+<wire x1="457.2" y1="149.86" x2="457.2" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="457.2" y1="139.7" x2="467.36" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="SDA"/>
+<wire x1="457.2" y1="139.7" x2="388.62" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="I2C_SDA" class="0">
+<segment>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="477.52" y1="139.7" x2="487.68" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="BMPR4" gate="G$1" pin="2"/>
+<wire x1="487.68" y1="139.7" x2="487.68" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="487.68" y1="139.7" x2="508" y2="139.7" width="0.1524" layer="91"/>
+<label x="502.92" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
