@@ -6632,9 +6632,11 @@ CASE = cathode = IN-</text>
 leave open for best AC performance</text>
 <text x="411.48" y="60.96" size="1.778" layer="91">jumper SJ2 &amp; SJ3 for 200uA
 otherwise 100uA</text>
-<text x="436.88" y="83.82" size="1.778" layer="91">5V full scale at
+<text x="434.34" y="76.2" size="1.778" layer="91">5V full scale at
 25K (100uA)
 50K (200uA)</text>
+<text x="454.66" y="68.58" size="1.778" layer="91">30K thermistor
+LC303J2J</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
