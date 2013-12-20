@@ -977,6 +977,43 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="-1.25" y1="-0.55" x2="-1.25" y2="-0.5" width="0.127" layer="21"/>
 <text x="-1.5" y="1.75" size="0.4064" layer="25">Name</text>
 </package>
+<package name="MSOP08">
+<wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.1524" layer="21"/>
+<wire x1="1.299" y1="1.624" x2="1.624" y2="1.299" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.626" y1="1.299" x2="-1.301" y2="1.624" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.301" y2="-1.626" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.299" y1="-1.626" x2="1.624" y2="-1.301" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.341" y1="-1.626" x2="-1.204" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="-0.747" y1="-1.626" x2="-0.554" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="-0.097" y1="-1.626" x2="0.096" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="0.553" y1="-1.626" x2="0.746" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="1.203" y1="-1.626" x2="1.299" y2="-1.626" width="0.1524" layer="21"/>
+<wire x1="-1.301" y1="1.624" x2="-1.204" y2="1.624" width="0.1524" layer="21"/>
+<wire x1="-0.747" y1="1.624" x2="-0.554" y2="1.624" width="0.1524" layer="21"/>
+<wire x1="-0.097" y1="1.624" x2="0.096" y2="1.624" width="0.1524" layer="21"/>
+<wire x1="0.553" y1="1.624" x2="0.746" y2="1.624" width="0.1524" layer="21"/>
+<wire x1="1.203" y1="1.624" x2="1.299" y2="1.624" width="0.1524" layer="21"/>
+<circle x="-0.9456" y="-0.7906" radius="0.5" width="0.0508" layer="21"/>
+<smd name="8" x="-0.976" y="2.112" dx="0.3" dy="1.2" layer="1"/>
+<smd name="7" x="-0.326" y="2.112" dx="0.3" dy="1.2" layer="1"/>
+<smd name="6" x="0.324" y="2.112" dx="0.3" dy="1.2" layer="1"/>
+<smd name="5" x="0.974" y="2.112" dx="0.3" dy="1.2" layer="1"/>
+<smd name="4" x="0.974" y="-2.113" dx="0.3" dy="1.2" layer="1"/>
+<smd name="3" x="0.324" y="-2.113" dx="0.3" dy="1.2" layer="1"/>
+<smd name="2" x="-0.326" y="-2.113" dx="0.3" dy="1.2" layer="1"/>
+<smd name="1" x="-0.976" y="-2.113" dx="0.3" dy="1.2" layer="1"/>
+<text x="-2.032" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.0975" y1="1.6244" x2="-0.8537" y2="2.3557" layer="51"/>
+<rectangle x1="-0.4475" y1="1.6244" x2="-0.2037" y2="2.3557" layer="51"/>
+<rectangle x1="0.2025" y1="1.6244" x2="0.4463" y2="2.3557" layer="51"/>
+<rectangle x1="0.8525" y1="1.6244" x2="1.0963" y2="2.3557" layer="51"/>
+<rectangle x1="-1.0975" y1="-2.3569" x2="-0.8537" y2="-1.6256" layer="51"/>
+<rectangle x1="-0.4475" y1="-2.3569" x2="-0.2037" y2="-1.6256" layer="51"/>
+<rectangle x1="0.2025" y1="-2.3569" x2="0.4463" y2="-1.6256" layer="51"/>
+<rectangle x1="0.8525" y1="-2.3569" x2="1.0963" y2="-1.6256" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AL5802">
@@ -991,6 +1028,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pin name="FB" x="0" y="12.7" visible="pin" length="middle" rot="R270"/>
 <pin name="REXT" x="-7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
 <circle x="-10.16" y="-5.08" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+<symbol name="OPA381">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="IN-" x="-15.24" y="5.08" length="middle"/>
+<pin name="IN+" x="-15.24" y="-7.62" length="middle"/>
+<pin name="V-" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="V+" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="OUT" x="20.32" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1007,6 +1054,25 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
 <connect gate="G$1" pin="REXT" pad="REXT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA381" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="OPA381" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP08">
+<connects>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="V+" pad="7"/>
+<connect gate="G$1" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5278,10 +5344,12 @@ Upgrade for LT1394 and LT1016 Designs</description>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="RFB" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="??"/>
+<part name="RFB" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="CFB" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="??"/>
 <part name="AMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$1" library="tickTockLibrary" deviceset="OPA381" device=""/>
+<part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5321,9 +5389,13 @@ Jumper 2-3 for LOCAL</text>
 100us pulse width</text>
 <text x="320.04" y="320.04" size="1.778" layer="91">1.1-1.8 Vpp into 50ohms
 sinusoidal</text>
-<text x="91.44" y="314.96" size="1.778" layer="91">OPA381 MSOP-8</text>
-<text x="35.56" y="322.58" size="1.778" layer="91">cathode to IN-
+<text x="116.84" y="274.32" size="1.778" layer="91">OPA381 MSOP-8</text>
+<text x="53.34" y="276.86" size="1.778" layer="91">cathode to IN-
 anode to IN+ = GND</text>
+<text x="33.02" y="299.72" size="1.778" layer="91">SD5421 photodiode
+TAB = anode = IN+ (GND)
+CASE = cathode = IN-</text>
+<text x="182.88" y="398.78" size="1.778" layer="91">PD_CATHODE = GND</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5436,19 +5508,21 @@ anode to IN+ = GND</text>
 <instance part="SUPPLY16" gate="G$1" x="386.08" y="345.44"/>
 <instance part="GPR2" gate="G$1" x="330.2" y="259.08" rot="R270"/>
 <instance part="GND19" gate="1" x="330.2" y="246.38"/>
-<instance part="GND20" gate="1" x="83.82" y="297.18"/>
-<instance part="SUPPLY17" gate="G$1" x="83.82" y="340.36"/>
-<instance part="SUPPLY18" gate="G$1" x="71.12" y="304.8"/>
-<instance part="RFB" gate="G$1" x="101.6" y="350.52" rot="R180"/>
-<instance part="CFB" gate="G$1" x="104.14" y="340.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="101.219" y="341.884" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="106.299" y="341.884" size="1.778" layer="96" rot="R90"/>
+<instance part="GND20" gate="1" x="109.22" y="243.84"/>
+<instance part="SUPPLY17" gate="G$1" x="109.22" y="297.18"/>
+<instance part="SUPPLY18" gate="G$1" x="96.52" y="251.46"/>
+<instance part="RFB" gate="G$1" x="124.46" y="307.34" rot="R180"/>
+<instance part="CFB" gate="G$1" x="127" y="297.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="124.079" y="298.704" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="129.159" y="298.704" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="AMPC1" gate="G$1" x="78.74" y="302.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="75.819" y="303.784" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="80.899" y="303.784" size="1.778" layer="96" rot="R90"/>
+<instance part="AMPC1" gate="G$1" x="104.14" y="248.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="101.219" y="250.444" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="106.299" y="250.444" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND21" gate="1" x="73.66" y="320.04"/>
+<instance part="GND21" gate="1" x="88.9" y="266.7"/>
+<instance part="U$1" gate="G$1" x="109.22" y="281.94"/>
+<instance part="GND22" gate="1" x="210.82" y="396.24"/>
 </instances>
 <busses>
 </busses>
@@ -5608,15 +5682,24 @@ anode to IN+ = GND</text>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="83.82" y1="322.58" x2="83.82" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="269.24" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="AMPC1" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="302.26" x2="83.82" y2="299.72" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="302.26" x2="83.82" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="248.92" x2="109.22" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="248.92" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="327.66" x2="73.66" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="327.66" x2="73.66" y2="322.58" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="274.32" x2="88.9" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="274.32" x2="88.9" y2="269.24" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="PKG-CABLE" gate="G$1" pin="4"/>
+<wire x1="243.84" y1="406.4" x2="210.82" y2="406.4" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="406.4" x2="210.82" y2="403.86" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="PKG-CABLE" gate="G$1" pin="5"/>
+<wire x1="210.82" y1="403.86" x2="210.82" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="403.86" x2="210.82" y2="403.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IR_PWM" class="0">
@@ -5729,13 +5812,13 @@ anode to IN+ = GND</text>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
-<wire x1="83.82" y1="340.36" x2="83.82" y2="337.82" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="297.18" x2="109.22" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY18" gate="G$1" pin="5V"/>
-<wire x1="71.12" y1="304.8" x2="71.12" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="251.46" x2="96.52" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="AMPC1" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="302.26" x2="73.66" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="248.92" x2="99.06" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6049,29 +6132,46 @@ anode to IN+ = GND</text>
 </net>
 <net name="PD_AMP_OUT" class="0">
 <segment>
-<wire x1="93.98" y1="330.2" x2="111.76" y2="330.2" width="0.1524" layer="91"/>
-<pinref part="CFB" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="330.2" x2="142.24" y2="330.2" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="340.36" x2="111.76" y2="340.36" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="340.36" x2="111.76" y2="330.2" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="340.36" x2="111.76" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="281.94" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
+<label x="165.1" y="284.48" size="1.778" layer="95"/>
 <pinref part="RFB" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="350.52" x2="106.68" y2="350.52" width="0.1524" layer="91"/>
-<label x="144.78" y="332.74" size="1.778" layer="95"/>
+<wire x1="134.62" y1="281.94" x2="177.8" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="307.34" x2="129.54" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="297.18" x2="134.62" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="CFB" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="297.18" x2="134.62" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="297.18" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD_CATHODE" class="0">
 <segment>
 <pinref part="CFB" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="340.36" x2="93.98" y2="340.36" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="340.36" x2="93.98" y2="350.52" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="297.18" x2="116.84" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="297.18" x2="116.84" y2="307.34" width="0.1524" layer="91"/>
 <pinref part="RFB" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="350.52" x2="96.52" y2="350.52" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="350.52" x2="73.66" y2="350.52" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="350.52" x2="73.66" y2="332.74" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="332.74" x2="78.74" y2="332.74" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="332.74" x2="55.88" y2="332.74" width="0.1524" layer="91"/>
-<label x="53.34" y="335.28" size="1.778" layer="95"/>
+<wire x1="116.84" y1="307.34" x2="119.38" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="307.34" x2="88.9" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="307.34" x2="88.9" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="IN-"/>
+<wire x1="88.9" y1="287.02" x2="93.98" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="287.02" x2="55.88" y2="287.02" width="0.1524" layer="91"/>
+<label x="53.34" y="289.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD_ANODE" class="0">
+<segment>
+<pinref part="PKG-CABLE" gate="G$1" pin="3"/>
+<wire x1="243.84" y1="408.94" x2="198.12" y2="408.94" width="0.1524" layer="91"/>
+<label x="180.34" y="408.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VTEMP" class="0">
+<segment>
+<pinref part="PKG-CABLE" gate="G$1" pin="6"/>
+<wire x1="243.84" y1="401.32" x2="228.6" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="401.32" x2="228.6" y2="381" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="381" x2="198.12" y2="381" width="0.1524" layer="91"/>
+<label x="190.5" y="381" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
