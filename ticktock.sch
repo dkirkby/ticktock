@@ -6605,7 +6605,7 @@ MAX232's Rx/Tx pairs</text>
 <text x="510.54" y="388.62" size="1.778" layer="91">DB9 female
 TX =&gt; RX(2), TX(3) =&gt; RX
 </text>
-<text x="20.32" y="40.64" size="1.778" layer="91">USB-A
+<text x="20.32" y="40.64" size="1.778" layer="91">USB-B
 (square)</text>
 <text x="15.24" y="25.4" size="1.778" layer="91">Max power from
 USB is 100mA</text>
