@@ -6658,6 +6658,11 @@ otherwise 100uA</text>
 <wire x1="129.54" y1="297.18" x2="134.62" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="297.18" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
+<wire x1="165.1" y1="180.34" x2="187.96" y2="180.34" width="0.1524" layer="91"/>
+<label x="187.96" y="180.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PD_CATHODE" class="0">
 <segment>
@@ -6697,6 +6702,11 @@ otherwise 100uA</text>
 <wire x1="411.48" y1="68.58" x2="416.56" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="68.58" x2="416.56" y2="71.12" width="0.1524" layer="91"/>
 <label x="439.42" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
+<wire x1="165.1" y1="177.8" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
+<label x="187.96" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -6740,6 +6750,11 @@ otherwise 100uA</text>
 <wire x1="429.26" y1="144.78" x2="449.58" y2="144.78" width="0.1524" layer="91"/>
 <label x="444.5" y="144.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT16/SCL)PC0"/>
+<wire x1="165.1" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="187.96" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -6759,6 +6774,11 @@ otherwise 100uA</text>
 <wire x1="487.68" y1="139.7" x2="487.68" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="139.7" x2="508" y2="139.7" width="0.1524" layer="91"/>
 <label x="502.92" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCINT17/SDA)PC1"/>
+<wire x1="165.1" y1="127" x2="187.96" y2="127" width="0.1524" layer="91"/>
+<label x="187.96" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
