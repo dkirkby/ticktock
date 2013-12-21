@@ -6670,7 +6670,7 @@ TX =&gt; RX(2), TX(3) =&gt; RX
 USB is 100mA</text>
 <text x="86.36" y="129.54" size="1.778" layer="91">See Fig 23-9 on
 p.254 of datasheet</text>
-<text x="182.88" y="360.68" size="1.778" layer="91">IR_ANODE = +5V</text>
+<text x="170.18" y="360.68" size="1.778" layer="91">IR_ANODE (CASE) = +5V</text>
 <text x="88.9" y="162.56" size="1.778" layer="91">XTAL2 is NC
 See Fig 9-4</text>
 <text x="119.38" y="198.12" size="1.778" layer="91">See http://sanguino.cc/1-0kitassembly</text>
@@ -6686,7 +6686,7 @@ anode to IN+ = GND</text>
 <text x="33.02" y="299.72" size="1.778" layer="91">SD5421 photodiode
 TAB = anode = IN+ (GND)
 CASE = cathode = IN-</text>
-<text x="177.8" y="340.36" size="1.778" layer="91">PD_CATHODE = GND</text>
+<text x="170.18" y="340.36" size="1.778" layer="91">PD_ANODE (TAB) = GND</text>
 <text x="363.22" y="48.26" size="1.778" layer="91">jumper for best DC performance
 leave open for best AC performance</text>
 <text x="411.48" y="60.96" size="1.778" layer="91">jumper SJ2 &amp; SJ3 for 200uA
@@ -7186,10 +7186,6 @@ LC303J2J</text>
 <wire x1="386.08" y1="340.36" x2="386.08" y2="345.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY17" gate="G$1" pin="5V"/>
-<wire x1="109.22" y1="297.18" x2="109.22" y2="294.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SUPPLY18" gate="G$1" pin="5V"/>
 <wire x1="96.52" y1="251.46" x2="96.52" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="AMPC1" gate="G$1" pin="1"/>
@@ -7234,6 +7230,11 @@ LC303J2J</text>
 <wire x1="408.94" y1="121.92" x2="421.64" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="G$1" pin="5V"/>
 <wire x1="421.64" y1="121.92" x2="421.64" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="V+"/>
+<pinref part="SUPPLY17" gate="G$1" pin="5V"/>
+<wire x1="109.22" y1="294.64" x2="109.22" y2="297.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7580,7 +7581,6 @@ LC303J2J</text>
 </net>
 <net name="PD_AMP_OUT" class="0">
 <segment>
-<wire x1="129.54" y1="281.94" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
 <label x="165.1" y="284.48" size="1.778" layer="95"/>
 <pinref part="RFB" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="281.94" x2="177.8" y2="281.94" width="0.1524" layer="91"/>
@@ -7589,6 +7589,8 @@ LC303J2J</text>
 <pinref part="CFB" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="297.18" x2="134.62" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="297.18" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="129.54" y1="281.94" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
@@ -7612,8 +7614,6 @@ LC303J2J</text>
 <wire x1="88.9" y1="287.02" x2="55.88" y2="287.02" width="0.1524" layer="91"/>
 <label x="53.34" y="289.56" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="PD_ANODE" class="0">
 <segment>
 <pinref part="PKG-CABLE" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="350.52" x2="193.04" y2="350.52" width="0.1524" layer="91"/>
@@ -7746,12 +7746,6 @@ LC303J2J</text>
 <wire x1="259.08" y1="157.48" x2="259.08" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="238.76" y1="147.32" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="YELLOW_LED" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -7775,6 +7769,8 @@ LC303J2J</text>
 <pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
 <wire x1="165.1" y1="139.7" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
 <label x="226.06" y="139.7" size="1.778" layer="95"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="238.76" y1="147.32" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TP1" class="0">
