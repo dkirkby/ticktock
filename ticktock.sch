@@ -6641,6 +6641,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="STANDOFF2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -6794,7 +6795,7 @@ LC303J2J</text>
 <instance part="SUPPLY14" gate="G$1" x="187.96" y="78.74"/>
 <instance part="GND14" gate="1" x="187.96" y="55.88"/>
 <instance part="U2" gate="G$1" x="236.22" y="66.04"/>
-<instance part="SUPPLY15" gate="G$1" x="220.98" y="76.2"/>
+<instance part="SUPPLY15" gate="G$1" x="210.82" y="91.44"/>
 <instance part="GND15" gate="1" x="251.46" y="48.26"/>
 <instance part="GND16" gate="1" x="220.98" y="48.26"/>
 <instance part="ATC4" gate="G$1" x="220.98" y="58.42" smashed="yes" rot="R180">
@@ -6877,6 +6878,7 @@ LC303J2J</text>
 <instance part="STANDOFF2" gate="G$1" x="487.68" y="302.26"/>
 <instance part="STANDOFF3" gate="G$1" x="487.68" y="297.18"/>
 <instance part="STANDOFF4" gate="G$1" x="487.68" y="292.1"/>
+<instance part="JP9" gate="G$1" x="220.98" y="83.82" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7170,17 +7172,6 @@ LC303J2J</text>
 <pinref part="SUPPLY14" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="SUPPLY15" gate="G$1" pin="5V"/>
-<wire x1="220.98" y1="76.2" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="EN"/>
-<wire x1="220.98" y1="68.58" x2="220.98" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VCC"/>
-<wire x1="223.52" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="ATC4" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="63.5" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="V+"/>
 <pinref part="SUPPLY16" gate="G$1" pin="5V"/>
 <wire x1="386.08" y1="340.36" x2="386.08" y2="345.44" width="0.1524" layer="91"/>
@@ -7235,6 +7226,13 @@ LC303J2J</text>
 <pinref part="U$1" gate="G$1" pin="V+"/>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 <wire x1="109.22" y1="294.64" x2="109.22" y2="297.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="76.2" x2="218.44" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY15" gate="G$1" pin="5V"/>
+<wire x1="210.82" y1="73.66" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7798,6 +7796,19 @@ LC303J2J</text>
 <pinref part="IC1" gate="G$1" pin="(PCINT0/ADC0)PA0"/>
 <wire x1="231.14" y1="170.18" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
 <label x="223.52" y="170.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="EN"/>
+<wire x1="220.98" y1="68.58" x2="220.98" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VCC"/>
+<wire x1="223.52" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="ATC4" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="63.5" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
