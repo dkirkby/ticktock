@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.02" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1157,8 +1157,8 @@ design rules under a new name.</description>
 <element name="MAXC5" library="SparkFun-Capacitors" package="0805" value="1uF" x="10.16" y="38.1" rot="R180"/>
 <element name="MAXC4" library="SparkFun-Capacitors" package="0805" value="1uF" x="17.78" y="52.07" rot="R90"/>
 <element name="X1" library="SparkFun-Connectors" package="DB9" value="" x="3.81" y="50.8" rot="R90"/>
-<element name="GPS_10MHZ_IN" library="SparkFun-Connectors" package="BNC" value="BNCPTH" x="11.43" y="25.4" rot="R90"/>
-<element name="GPS_1PPS_IN" library="SparkFun-Connectors" package="BNC" value="BNCPTH" x="11.43" y="7.62" rot="R90"/>
+<element name="GPS_10MHZ_IN" library="SparkFun-Connectors" package="BNC" value="BNCPTH" x="11.303" y="25.4" rot="R90"/>
+<element name="GPS_1PPS_IN" library="SparkFun-Connectors" package="BNC" value="BNCPTH" x="11.303" y="8.128" rot="R90"/>
 <element name="IC1" library="atmel" package="TQFP44" value="ATMEGA644A" x="38.1" y="22.86"/>
 <element name="U3" library="SparkFun-DigitalIC" package="SSOP28DB" value="FT232RLSSOP" x="30.48" y="5.08" rot="R180">
 <attribute name="PROD_ID" value="IC-00870" x="30.48" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1297,14 +1297,14 @@ design rules under a new name.</description>
 <wire x1="20.26" y1="22.225" x2="20.26" y2="23.495" width="0" layer="19" extent="1-1"/>
 <wire x1="16.51" y1="23.23" x2="20.26" y2="23.495" width="0" layer="19" extent="1-1"/>
 <wire x1="15.61" y1="19.05" x2="16.51" y2="23.23" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="22.86" x2="16.51" y2="23.23" width="0" layer="19" extent="1-1"/>
+<wire x1="11.303" y1="22.86" x2="16.51" y2="23.23" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="31.88" x2="20.26" y2="23.495" width="0" layer="19" extent="1-1"/>
 <wire x1="30.48" y1="33.02" x2="38.1" y2="28.66" width="0" layer="19" extent="1-1"/>
 <wire x1="11.06" y1="38.1" x2="17.78" y2="31.88" width="0" layer="19" extent="1-1"/>
 <wire x1="45.7" y1="8.89" x2="36.83" y2="11.8" width="0" layer="19" extent="1-1"/>
 <wire x1="8.63" y1="47.625" x2="11.06" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="5.23" y1="56.34" x2="8.63" y2="47.625" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="5.08" x2="21.96" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="11.303" y1="5.588" x2="21.96" y2="5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="52.97" x2="8.63" y2="47.625" width="0" layer="19" extent="1-1"/>
 <wire x1="21.463" y1="45.72" x2="17.78" y2="52.97" width="0" layer="19" extent="1-1"/>
 <wire x1="32.65" y1="46.99" x2="21.463" y2="45.72" width="0" layer="19" extent="1-1"/>
@@ -1439,14 +1439,14 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="15"/>
 <contactref element="GPR2" pad="1"/>
 <wire x1="22.86" y1="9.79" x2="36.5" y2="17.06" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="7.62" x2="22.86" y2="9.79" width="0" layer="19" extent="1-1"/>
+<wire x1="11.303" y1="8.128" x2="22.86" y2="9.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPS_10MHZ">
 <contactref element="GPS_10MHZ_IN" pad="S"/>
 <contactref element="IC2" pad="2"/>
 <contactref element="GPR1" pad="1"/>
 <wire x1="16.51" y1="25.03" x2="20.26" y2="24.765" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="25.4" x2="16.51" y2="25.03" width="0" layer="19" extent="1-1"/>
+<wire x1="11.303" y1="25.4" x2="16.51" y2="25.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCCIO">
 <contactref element="U3" pad="4"/>
