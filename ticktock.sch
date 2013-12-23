@@ -6857,12 +6857,12 @@ LC303J2J</text>
 <instance part="SUPPLY24" gate="G$1" x="472.44" y="170.18"/>
 <instance part="SUPPLY26" gate="G$1" x="429.26" y="180.34"/>
 <instance part="SUPPLY27" gate="G$1" x="487.68" y="180.34"/>
-<instance part="ATR2" gate="G$1" x="238.76" y="162.56" rot="R270"/>
-<instance part="ATR3" gate="G$1" x="248.92" y="162.56" rot="R270"/>
-<instance part="ATR4" gate="G$1" x="259.08" y="162.56" rot="R270"/>
-<instance part="D2" gate="G$1" x="248.92" y="152.4"/>
-<instance part="D1" gate="G$1" x="238.76" y="152.4"/>
-<instance part="D3" gate="G$1" x="259.08" y="152.4"/>
+<instance part="ATR2" gate="G$1" x="238.76" y="147.32" rot="R270"/>
+<instance part="ATR3" gate="G$1" x="248.92" y="147.32" rot="R270"/>
+<instance part="ATR4" gate="G$1" x="259.08" y="147.32" rot="R270"/>
+<instance part="D2" gate="G$1" x="248.92" y="162.56"/>
+<instance part="D1" gate="G$1" x="238.76" y="162.56"/>
+<instance part="D3" gate="G$1" x="259.08" y="162.56"/>
 <instance part="SUPPLY28" gate="G$1" x="238.76" y="170.18"/>
 <instance part="SUPPLY29" gate="G$1" x="248.92" y="170.18"/>
 <instance part="SUPPLY30" gate="G$1" x="259.08" y="170.18"/>
@@ -7202,21 +7202,6 @@ LC303J2J</text>
 <wire x1="487.68" y1="160.02" x2="487.68" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY28" gate="G$1" pin="5V"/>
-<pinref part="ATR2" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="170.18" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY29" gate="G$1" pin="5V"/>
-<pinref part="ATR3" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="170.18" x2="248.92" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY30" gate="G$1" pin="5V"/>
-<pinref part="ATR4" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="170.18" x2="259.08" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP8" gate="G$1" pin="7"/>
 <wire x1="408.94" y1="121.92" x2="421.64" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="G$1" pin="5V"/>
@@ -7233,6 +7218,21 @@ LC303J2J</text>
 <wire x1="218.44" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="G$1" pin="5V"/>
 <wire x1="210.82" y1="73.66" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY28" gate="G$1" pin="5V"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="238.76" y1="170.18" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY29" gate="G$1" pin="5V"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="248.92" y1="170.18" x2="248.92" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY30" gate="G$1" pin="5V"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="259.08" y1="170.18" x2="259.08" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7723,43 +7723,22 @@ LC303J2J</text>
 <label x="431.8" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="ATR2" gate="G$1" pin="2"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="238.76" y1="157.48" x2="238.76" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="ATR3" gate="G$1" pin="2"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="248.92" y1="157.48" x2="248.92" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="ATR4" gate="G$1" pin="2"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="259.08" y1="157.48" x2="259.08" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="YELLOW_LED" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="248.92" y1="147.32" x2="248.92" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="(PCINT21/TDI)PC5"/>
 <wire x1="248.92" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 <label x="226.06" y="137.16" size="1.778" layer="95"/>
+<pinref part="ATR3" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="142.24" x2="248.92" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GREEN_LED" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="259.08" y1="147.32" x2="259.08" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="(PCINT20/TDO)PC4"/>
 <wire x1="165.1" y1="134.62" x2="259.08" y2="134.62" width="0.1524" layer="91"/>
 <label x="226.06" y="134.62" size="1.778" layer="95"/>
+<pinref part="ATR4" gate="G$1" pin="2"/>
+<wire x1="259.08" y1="142.24" x2="259.08" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RED_LED" class="0">
@@ -7767,8 +7746,8 @@ LC303J2J</text>
 <pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
 <wire x1="165.1" y1="139.7" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
 <label x="226.06" y="139.7" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="238.76" y1="147.32" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="ATR2" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="142.24" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TP1" class="0">
@@ -7809,6 +7788,27 @@ LC303J2J</text>
 <wire x1="220.98" y1="63.5" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="ATR4" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="157.48" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="ATR3" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="157.48" x2="248.92" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="ATR2" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="157.48" x2="238.76" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
