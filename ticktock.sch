@@ -7136,10 +7136,6 @@ LC303J2J</text>
 <wire x1="50.8" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="SUPPLY8" gate="G$1" pin="5V"/>
 <pinref part="FTC1" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="38.1" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
@@ -7243,6 +7239,11 @@ LC303J2J</text>
 <pinref part="SUPPLY30" gate="G$1" pin="5V"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="259.08" y1="170.18" x2="259.08" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VCCIO"/>
+<pinref part="SUPPLY7" gate="G$1" pin="5V"/>
+<wire x1="58.42" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
