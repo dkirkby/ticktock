@@ -1356,8 +1356,12 @@ design rules under a new name.</description>
 <wire x1="38.1" y1="27.178" x2="36.576" y2="25.654" width="0.508" layer="1"/>
 <wire x1="36.576" y1="25.654" x2="34.29" y2="25.654" width="0.508" layer="1"/>
 <via x="34.29" y="25.654" extent="1-16" drill="0.6"/>
-<wire x1="25.122" y1="23.156" x2="25.122" y2="23.806" width="0" layer="19" extent="1-1"/>
-<wire x1="20.597" y1="23.806" x2="20.597" y2="23.156" width="0" layer="19" extent="1-1"/>
+<wire x1="25.122" y1="23.806" x2="23.552" y2="23.806" width="0.381" layer="1"/>
+<wire x1="23.552" y1="23.806" x2="23.114" y2="23.368" width="0.381" layer="1"/>
+<wire x1="20.597" y1="23.806" x2="22.422" y2="23.806" width="0.381" layer="1"/>
+<wire x1="22.422" y1="23.806" x2="22.606" y2="23.622" width="0.381" layer="1"/>
+<via x="43.688" y="47.244" extent="1-16" drill="0.6"/>
+<via x="15.24" y="60.452" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="IR_PWM">
 <contactref element="Q1" pad="1"/>
