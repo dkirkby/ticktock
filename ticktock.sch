@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5803,7 +5803,12 @@ Upgrade for LT1394 and LT1016 Designs</description>
 <connect gate="G$1" pin="V-" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="AD8611ARMZ-R2" constant="no"/>
+<attribute name="OC_FARNELL" value="1319472" constant="no"/>
+<attribute name="OC_NEWARK" value="19M8930" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="RM" package="MSOP08">
@@ -5818,7 +5823,12 @@ Upgrade for LT1394 and LT1016 Designs</description>
 <connect gate="G$1" pin="V-" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="AD8611ARMZ-R2" constant="no"/>
+<attribute name="OC_FARNELL" value="1464995" constant="no"/>
+<attribute name="OC_NEWARK" value="19M8930" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6581,7 +6591,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ATC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.01uF"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
-<part name="IC2" library="analog-devices" deviceset="AD8611" device="R"/>
+<part name="IC2" library="analog-devices" deviceset="AD8611" device="RM" value="AD8611RM"/>
 <part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
