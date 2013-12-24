@@ -6550,7 +6550,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="MAXC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="X1" library="SparkFun-Connectors" deviceset="DB9" device="FEMALE"/>
+<part name="X1" library="SparkFun-Connectors" deviceset="DB9" device="FEMALE" value="RS232"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GPS_10MHZ_IN" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
 <part name="GPS_1PPS_IN" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
@@ -6590,7 +6590,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ATC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.01uF"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3 Pin"/>
 <part name="IC2" library="analog-devices" deviceset="AD8611" device="RM" value="AD8611RM"/>
 <part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6605,7 +6605,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="CFB" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="??"/>
 <part name="AMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$1" library="tickTockLibrary" deviceset="OPA381" device=""/>
+<part name="U$1" library="tickTockLibrary" deviceset="OPA381" device="" value="OPA381"/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U4" library="SparkFun-Sensors" deviceset="BMP180" device=""/>
 <part name="IC3" library="burr-brown" deviceset="REF200" device="U"/>
@@ -6621,7 +6621,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="BMPR3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="BMPR4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6644,14 +6643,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="JP5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="JP8" library="SparkFun-Connectors" deviceset="M07" device="LOCK"/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="M07" device="LOCK" value="7-Pin"/>
 <part name="SUPPLY31" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="STANDOFF1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
-<part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3-Pin"/>
 </parts>
 <sheets>
 <sheet>
@@ -6855,7 +6854,6 @@ LC303J2J</text>
 <instance part="BMPR3" gate="G$1" x="457.2" y="154.94" rot="R270"/>
 <instance part="BMPR4" gate="G$1" x="487.68" y="154.94" rot="R270"/>
 <instance part="SUPPLY20" gate="G$1" x="398.78" y="170.18"/>
-<instance part="SUPPLY21" gate="G$1" x="398.78" y="170.18"/>
 <instance part="SUPPLY23" gate="G$1" x="457.2" y="170.18"/>
 <instance part="SUPPLY25" gate="G$1" x="342.9" y="170.18"/>
 <instance part="GND24" gate="1" x="365.76" y="154.94"/>
@@ -6907,6 +6905,7 @@ LC303J2J</text>
 <wire x1="78.74" y1="347.98" x2="78.74" y2="345.44" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="350.52" x2="93.98" y2="347.98" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="347.98" x2="78.74" y2="347.98" width="0.1524" layer="91"/>
+<junction x="78.74" y="347.98"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -6955,6 +6954,10 @@ LC303J2J</text>
 <wire x1="58.42" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND21"/>
 <wire x1="58.42" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+<junction x="50.8" y="30.48"/>
+<junction x="50.8" y="33.02"/>
+<junction x="50.8" y="27.94"/>
+<junction x="50.8" y="25.4"/>
 </segment>
 <segment>
 <pinref part="FTC1" gate="G$1" pin="2"/>
@@ -6964,6 +6967,7 @@ LC303J2J</text>
 <wire x1="111.76" y1="25.4" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="FTC2" gate="G$1" pin="-"/>
+<junction x="101.6" y="22.86"/>
 </segment>
 <segment>
 <pinref part="FTC3" gate="G$1" pin="2"/>
@@ -6984,6 +6988,9 @@ LC303J2J</text>
 <wire x1="111.76" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="111.76" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<junction x="104.14" y="101.6"/>
+<junction x="104.14" y="104.14"/>
+<junction x="104.14" y="106.68"/>
 </segment>
 <segment>
 <pinref part="ATC2" gate="G$1" pin="1"/>
@@ -7024,6 +7031,8 @@ LC303J2J</text>
 <wire x1="373.38" y1="312.42" x2="307.34" y2="312.42" width="0.1524" layer="91"/>
 <pinref part="GPS_10MHZ_IN" gate="G$1" pin="GND"/>
 <wire x1="307.34" y1="312.42" x2="307.34" y2="322.58" width="0.1524" layer="91"/>
+<junction x="373.38" y="312.42"/>
+<junction x="378.46" y="312.42"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -7036,6 +7045,8 @@ LC303J2J</text>
 <pinref part="IC2" gate="G$1" pin="L"/>
 <wire x1="391.16" y1="312.42" x2="391.16" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="391.16" y1="307.34" x2="388.62" y2="307.34" width="0.1524" layer="91"/>
+<junction x="386.08" y="307.34"/>
+<junction x="388.62" y="307.34"/>
 </segment>
 <segment>
 <pinref part="GPR2" gate="G$1" pin="2"/>
@@ -7045,18 +7056,16 @@ LC303J2J</text>
 <wire x1="307.34" y1="251.46" x2="307.34" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="330.2" y1="248.92" x2="330.2" y2="251.46" width="0.1524" layer="91"/>
+<junction x="330.2" y="251.46"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="109.22" y1="269.24" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="AMPC1" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="248.92" x2="109.22" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="248.92" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="93.98" y1="274.32" x2="88.9" y2="274.32" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="274.32" x2="88.9" y2="269.24" width="0.1524" layer="91"/>
-<pinref part="GND21" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="V-"/>
+<wire x1="109.22" y1="269.24" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
+<junction x="109.22" y="248.92"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -7066,6 +7075,7 @@ LC303J2J</text>
 <wire x1="238.76" y1="345.44" x2="205.74" y2="345.44" width="0.1524" layer="91"/>
 <pinref part="PKG-CABLE" gate="G$1" pin="6"/>
 <wire x1="238.76" y1="342.9" x2="205.74" y2="342.9" width="0.1524" layer="91"/>
+<junction x="205.74" y="342.9"/>
 </segment>
 <segment>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -7081,12 +7091,19 @@ LC303J2J</text>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="BMPC1" gate="G$1" pin="2"/>
 <wire x1="353.06" y1="162.56" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
+<junction x="355.6" y="162.56"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="G$1" pin="1"/>
 <wire x1="408.94" y1="106.68" x2="421.64" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="421.64" y1="106.68" x2="421.64" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="IN+"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="93.98" y1="274.32" x2="88.9" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="274.32" x2="88.9" y2="269.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IR_PWM" class="0">
@@ -7108,6 +7125,7 @@ LC303J2J</text>
 <wire x1="86.36" y1="401.32" x2="86.36" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="398.78" x2="86.36" y2="391.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="398.78" x2="116.84" y2="398.78" width="0.1524" layer="91"/>
+<junction x="86.36" y="398.78"/>
 </segment>
 <segment>
 <pinref part="PKG-CABLE" gate="G$1" pin="1"/>
@@ -7124,6 +7142,7 @@ LC303J2J</text>
 <wire x1="469.9" y1="408.94" x2="454.66" y2="408.94" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="408.94" x2="416.56" y2="408.94" width="0.1524" layer="91"/>
 <pinref part="MAXC5" gate="G$1" pin="2"/>
+<junction x="454.66" y="408.94"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="VBUS"/>
@@ -7143,6 +7162,7 @@ LC303J2J</text>
 <wire x1="101.6" y1="35.56" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="35.56" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="FTC2" gate="G$1" pin="+"/>
+<junction x="101.6" y="35.56"/>
 </segment>
 <segment>
 <pinref part="SUPPLY10" gate="G$1" pin="5V"/>
@@ -7155,6 +7175,8 @@ LC303J2J</text>
 <wire x1="111.76" y1="185.42" x2="104.14" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <wire x1="111.76" y1="187.96" x2="104.14" y2="187.96" width="0.1524" layer="91"/>
+<junction x="104.14" y="185.42"/>
+<junction x="104.14" y="187.96"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
@@ -7196,6 +7218,7 @@ LC303J2J</text>
 <wire x1="355.6" y1="68.58" x2="353.06" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="68.58" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY19" gate="G$1" pin="5V"/>
+<junction x="353.06" y="71.12"/>
 </segment>
 <segment>
 <pinref part="BMPR2" gate="G$1" pin="1"/>
@@ -7263,6 +7286,7 @@ LC303J2J</text>
 <wire x1="86.36" y1="360.68" x2="93.98" y2="360.68" width="0.1524" layer="91"/>
 <pinref part="AL5802" gate="G$1" pin="REXT"/>
 <wire x1="93.98" y1="360.68" x2="93.98" y2="365.76" width="0.1524" layer="91"/>
+<junction x="93.98" y="360.68"/>
 </segment>
 </net>
 <net name="IR_CATHODE" class="0">
@@ -7362,6 +7386,7 @@ LC303J2J</text>
 <pinref part="GPR2" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="266.7" x2="353.06" y2="266.7" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="266.7" x2="330.2" y2="264.16" width="0.1524" layer="91"/>
+<junction x="330.2" y="266.7"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT30/OC2B/ICP)PD6"/>
@@ -7378,6 +7403,7 @@ LC303J2J</text>
 <pinref part="GPR1" gate="G$1" pin="1"/>
 <wire x1="373.38" y1="327.66" x2="381" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="327.66" x2="373.38" y2="325.12" width="0.1524" layer="91"/>
+<junction x="373.38" y="327.66"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -7425,18 +7451,11 @@ LC303J2J</text>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 <pinref part="U3" gate="G$1" pin="3V3OUT"/>
 <wire x1="43.18" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 <pinref part="FTC3" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="38.1" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
-<pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
-<pinref part="BMPR1" gate="G$1" pin="1"/>
-<wire x1="398.78" y1="170.18" x2="398.78" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY23" gate="G$1" pin="3.3V"/>
@@ -7454,6 +7473,8 @@ LC303J2J</text>
 <pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
 <pinref part="BMPC1" gate="G$1" pin="1"/>
 <wire x1="345.44" y1="162.56" x2="342.9" y2="162.56" width="0.1524" layer="91"/>
+<junction x="342.9" y="142.24"/>
+<junction x="342.9" y="162.56"/>
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
@@ -7464,6 +7485,11 @@ LC303J2J</text>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
 <wire x1="472.44" y1="147.32" x2="472.44" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BMPR1" gate="G$1" pin="1"/>
+<pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
+<wire x1="398.78" y1="165.1" x2="398.78" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_DTR" class="0">
@@ -7487,6 +7513,7 @@ LC303J2J</text>
 <wire x1="86.36" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="180.34" x2="86.36" y2="175.26" width="0.1524" layer="91"/>
 <label x="93.98" y="172.72" size="1.778" layer="95"/>
+<junction x="86.36" y="175.26"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
@@ -7504,6 +7531,7 @@ LC303J2J</text>
 <wire x1="83.82" y1="124.46" x2="83.82" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
 <wire x1="83.82" y1="160.02" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
+<junction x="68.58" y="124.46"/>
 </segment>
 </net>
 <net name="GPS_RX" class="0">
@@ -7600,6 +7628,8 @@ LC303J2J</text>
 <wire x1="134.62" y1="297.18" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="OUT"/>
 <wire x1="129.54" y1="281.94" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
+<junction x="134.62" y="297.18"/>
+<junction x="134.62" y="281.94"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
@@ -7622,6 +7652,8 @@ LC303J2J</text>
 <wire x1="88.9" y1="287.02" x2="93.98" y2="287.02" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="287.02" x2="55.88" y2="287.02" width="0.1524" layer="91"/>
 <label x="53.34" y="289.56" size="1.778" layer="95"/>
+<junction x="88.9" y="287.02"/>
+<junction x="116.84" y="307.34"/>
 </segment>
 <segment>
 <pinref part="PKG-CABLE" gate="G$1" pin="3"/>
@@ -7638,6 +7670,7 @@ LC303J2J</text>
 <wire x1="411.48" y1="68.58" x2="416.56" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="68.58" x2="416.56" y2="71.12" width="0.1524" layer="91"/>
 <label x="439.42" y="71.12" size="1.778" layer="95"/>
+<junction x="416.56" y="71.12"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
@@ -7682,6 +7715,7 @@ LC303J2J</text>
 <wire x1="398.78" y1="144.78" x2="408.94" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="SCL"/>
 <wire x1="388.62" y1="144.78" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
+<junction x="398.78" y="144.78"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
@@ -7692,6 +7726,7 @@ LC303J2J</text>
 <wire x1="429.26" y1="144.78" x2="429.26" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="429.26" y1="144.78" x2="449.58" y2="144.78" width="0.1524" layer="91"/>
 <label x="444.5" y="144.78" size="1.778" layer="95"/>
+<junction x="429.26" y="144.78"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT16/SCL)PC0"/>
@@ -7712,6 +7747,7 @@ LC303J2J</text>
 <wire x1="457.2" y1="139.7" x2="467.36" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="SDA"/>
 <wire x1="457.2" y1="139.7" x2="388.62" y2="139.7" width="0.1524" layer="91"/>
+<junction x="457.2" y="139.7"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
@@ -7722,6 +7758,7 @@ LC303J2J</text>
 <wire x1="487.68" y1="139.7" x2="487.68" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="139.7" x2="508" y2="139.7" width="0.1524" layer="91"/>
 <label x="502.92" y="139.7" size="1.778" layer="95"/>
+<junction x="487.68" y="139.7"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT17/SDA)PC1"/>
@@ -7799,6 +7836,8 @@ LC303J2J</text>
 <wire x1="220.98" y1="63.5" x2="220.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+<junction x="220.98" y="63.5"/>
+<junction x="220.98" y="68.58"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -7825,6 +7864,30 @@ LC303J2J</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,436.88,375.92,U1,T2IN,,,,"/>
+<approved hash="202,1,472.44,370.84,U1,R2IN,,,,"/>
+<approved hash="202,1,58.42,38.1,U3,RESET,,,,"/>
+<approved hash="202,1,58.42,43.18,U3,OSCI,,,,"/>
+<approved hash="202,1,88.9,45.72,U3,DSR,,,,"/>
+<approved hash="202,1,88.9,43.18,U3,DCD,,,,"/>
+<approved hash="202,1,88.9,40.64,U3,RI,,,,"/>
+<approved hash="202,1,88.9,35.56,U3,TXLED,,,,"/>
+<approved hash="202,1,88.9,33.02,U3,RXLED,,,,"/>
+<approved hash="202,1,88.9,53.34,U3,CTS,,,,"/>
+<approved hash="202,1,88.9,30.48,U3,PWREN,,,,"/>
+<approved hash="202,1,88.9,27.94,U3,TXDEN,,,,"/>
+<approved hash="202,1,88.9,25.4,U3,SLEEP,,,,"/>
+<approved hash="202,1,368.3,76.2,IC3,MIN,,,,"/>
+<approved hash="208,1,43.18,50.8,3.3V,sup,,,,"/>
+<approved hash="208,1,58.42,50.8,3.3V,out,,,,"/>
+<approved hash="208,1,124.46,38.1,3.3V,sup,,,,"/>
+<approved hash="208,1,457.2,170.18,3.3V,sup,,,,"/>
+<approved hash="208,1,342.9,170.18,3.3V,sup,,,,"/>
+<approved hash="208,1,414.02,170.18,3.3V,sup,,,,"/>
+<approved hash="208,1,472.44,170.18,3.3V,sup,,,,"/>
+<approved hash="208,1,398.78,170.18,3.3V,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
