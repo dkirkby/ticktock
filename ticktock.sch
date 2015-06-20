@@ -7123,28 +7123,28 @@ LC303J2J</text>
 <wire x1="27.94" y1="58.42" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_TX" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="TXD"/>
-<wire x1="88.9" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<label x="101.6" y="60.96" size="1.778" layer="95"/>
-</segment>
+<net name="USB_RX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT25/TXD0)PD1"/>
 <wire x1="165.1" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
 <label x="187.96" y="101.6" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="USB_RX" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="RXD"/>
 <wire x1="88.9" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <label x="101.6" y="58.42" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="USB_TX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT24/RXD0)PD0"/>
 <wire x1="165.1" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
 <label x="187.96" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="TXD"/>
+<wire x1="88.9" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<label x="101.6" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
