@@ -4597,7 +4597,12 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="G$1" pin="XTAL2" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ATMEGA644PV-10AU" constant="no"/>
+<attribute name="OC_FARNELL" value="1455123" constant="no"/>
+<attribute name="OC_NEWARK" value="58M3748" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="M" package="QFN44ML8X8">
@@ -4648,7 +4653,12 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="G$1" pin="XTAL2" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ATMEGA644PV-10MU" constant="no"/>
+<attribute name="OC_FARNELL" value="1748529" constant="no"/>
+<attribute name="OC_NEWARK" value="26R5637" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5779,7 +5789,12 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="SUBST" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="U" package="SO08">
@@ -5794,7 +5809,12 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="SUBST" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="TEXAS INSTRUMENTS" constant="no"/>
+<attribute name="MPN" value="REF200AU" constant="no"/>
+<attribute name="OC_FARNELL" value="1207240" constant="no"/>
+<attribute name="OC_NEWARK" value="34C7615" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6248,7 +6268,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="MAXC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="X1" library="SparkFun-Connectors" deviceset="DB9" device="FEMALE" value="RS232"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GPS_10MHZ_IN" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
 <part name="GPS_1PPS_IN" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
@@ -6346,6 +6365,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3-Pin"/>
+<part name="X2" library="SparkFun-Connectors" deviceset="DB9" device="MALE"/>
 </parts>
 <sheets>
 <sheet>
@@ -6366,9 +6386,10 @@ linearly with duty cycle</text>
 0805 pkg </text>
 <text x="403.86" y="358.14" size="1.778" layer="91">Only using one of the
 MAX232's Rx/Tx pairs</text>
-<text x="510.54" y="388.62" size="1.778" layer="91">DB9 female
+<text x="515.62" y="391.16" size="1.778" layer="91">DB9 male 
 TX =&gt; RX(2), TX(3) =&gt; RX
-</text>
+Use M/F Null Modem 
+(crossover) DB9 cable</text>
 <text x="20.32" y="40.64" size="1.778" layer="91">USB-B
 (square)</text>
 <text x="15.24" y="25.4" size="1.778" layer="91">Max power from
@@ -6448,7 +6469,6 @@ LC303J2J</text>
 <attribute name="VALUE" x="487.299" y="392.684" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND5" gate="1" x="490.22" y="383.54"/>
-<instance part="X1" gate="G$1" x="525.78" y="375.92"/>
 <instance part="GND6" gate="1" x="513.08" y="363.22"/>
 <instance part="GPS_10MHZ_IN" gate="G$1" x="307.34" y="327.66"/>
 <instance part="GPS_1PPS_IN" gate="G$1" x="307.34" y="266.7"/>
@@ -6579,6 +6599,7 @@ LC303J2J</text>
 <instance part="STANDOFF3" gate="G$1" x="487.68" y="297.18"/>
 <instance part="STANDOFF4" gate="G$1" x="487.68" y="292.1"/>
 <instance part="JP9" gate="G$1" x="220.98" y="83.82" rot="R270"/>
+<instance part="X2" gate="G$1" x="528.32" y="375.92"/>
 </instances>
 <busses>
 </busses>
@@ -6617,10 +6638,10 @@ LC303J2J</text>
 <wire x1="490.22" y1="391.16" x2="490.22" y2="386.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="5"/>
-<wire x1="518.16" y1="370.84" x2="513.08" y2="370.84" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="370.84" x2="513.08" y2="370.84" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="513.08" y1="370.84" x2="513.08" y2="365.76" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND"/>
@@ -7045,8 +7066,8 @@ LC303J2J</text>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="T1OUT"/>
-<wire x1="472.44" y1="378.46" x2="518.16" y2="378.46" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="472.44" y1="378.46" x2="520.7" y2="378.46" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -7054,8 +7075,8 @@ LC303J2J</text>
 <pinref part="U1" gate="G$1" pin="R1IN"/>
 <wire x1="472.44" y1="373.38" x2="505.46" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="505.46" y1="373.38" x2="505.46" y2="375.92" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="3"/>
-<wire x1="505.46" y1="375.92" x2="518.16" y2="375.92" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="375.92" x2="520.7" y2="375.92" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="GPS_1PPS" class="0">
