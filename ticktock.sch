@@ -1014,6 +1014,24 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <rectangle x1="0.2025" y1="-2.3569" x2="0.4463" y2="-1.6256" layer="51"/>
 <rectangle x1="0.8525" y1="-2.3569" x2="1.0963" y2="-1.6256" layer="51"/>
 </package>
+<package name="BME280">
+<smd name="2" x="1.025" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="3" x="1.025" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="4" x="1.025" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="1" x="1.025" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="8" x="-1.025" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="7" x="-1.025" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="6" x="-1.025" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="5" x="-1.025" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<wire x1="-1.25" y1="-1.25" x2="1.25" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1.25" x2="-1.25" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-1.25" x2="0.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="0.6" y1="1.25" x2="-0.6" y2="1.25" width="0.2032" layer="21"/>
+<text x="-3.048" y="1.524" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.048" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AL5802">
@@ -1038,6 +1056,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pin name="V-" x="0" y="-12.7" length="middle" rot="R90"/>
 <pin name="V+" x="0" y="12.7" length="middle" rot="R270"/>
 <pin name="OUT" x="20.32" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="BME280">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="GND@1" x="-2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="CSB" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="SDI" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SCK" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDO" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDDIO" x="-17.78" y="0" length="middle"/>
+<pin name="GND@2" x="2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="VDD" x="0" y="17.78" length="middle" rot="R270"/>
+<text x="-12.7" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1073,6 +1107,28 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connect gate="G$1" pin="OUT" pad="6"/>
 <connect gate="G$1" pin="V+" pad="7"/>
 <connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BME280">
+<gates>
+<gate name="G$1" symbol="BME280" x="0" y="0"/>
+</gates>
+<devices>
+<device name="BME280-LGA" package="BME280">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5543,159 +5599,6 @@ Upgrade for LT1394 and LT1016 Designs</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Sensors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="BMP180">
-<smd name="1" x="1.5" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="0" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="-1.5" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-1.5" y="-1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="0" y="-1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="6" x="1.5" y="-1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="7" x="1.5" y="0" dx="0.5" dy="0.6" layer="1" rot="R180"/>
-<wire x1="-1.9" y1="1.8" x2="-1.9" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-1.9" y1="-1.8" x2="1.9" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="1.9" y1="-1.8" x2="1.9" y2="1.8" width="0.127" layer="51"/>
-<wire x1="1.9" y1="1.8" x2="-1.9" y2="1.8" width="0.127" layer="51"/>
-<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="21"/>
-<wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-1" x2="-1" y2="-1.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1" y1="-1.5" x2="1.5" y2="-1" width="0.127" layer="51" curve="90"/>
-<wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1" x2="1" y2="1.5" width="0.127" layer="51" curve="90"/>
-<wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-1" y1="1.5" x2="-1.5" y2="1" width="0.127" layer="51" curve="90"/>
-<wire x1="-2" y1="1.875" x2="-2" y2="-1.875" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.875" x2="2" y2="-1.875" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.875" x2="2" y2="1.875" width="0.127" layer="21"/>
-<wire x1="2" y1="1.875" x2="-2" y2="1.875" width="0.127" layer="21"/>
-<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="21"/>
-<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2" y="-3.375" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="BMP180">
-<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
-
-Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
-Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
-
-The BMP180 is the function compatible successor of the BMP085, a new generation of high
-precision digital pressure sensors for consumer applications.&lt;p&gt;
-The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
-PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
-fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
-system integration with a microcontroller.&lt;p&gt;
-The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
-well as long term stability.&lt;p&gt;
-
-Key features:&lt;p&gt;
-
-- Temperature measurement included&lt;br&gt;
-- I2C interface&lt;br&gt;
-- Fully calibrated&lt;br&gt;
-- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
-- MSL 1&lt;p&gt;
-
-Basic specs:&lt;p&gt;
-
-Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
-Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
-Package: LGA package with metal lid&lt;br&gt;
-Small footprint: 3.6mm x 3.8mm&lt;br&gt;
-Super-flat: 0.93mm height&lt;br&gt;
-Low power: 5μA at 1 sample / sec. in standard mode&lt;br&gt;
-Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
-
-Typical applications:&lt;p&gt;
-
-- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
-- In- and out-door navigation&lt;br&gt;
-- Leisure and sports&lt;br&gt;
-- Weather forecast&lt;br&gt;
-- Vertical velocity indication (rise/sink speed)</description>
-<pin name="VDD" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDDIO" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="SCL" x="-15.24" y="-2.54" length="middle" direction="in"/>
-<pin name="SDA" x="-15.24" y="2.54" length="middle"/>
-<pin name="GND" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BMP180" prefix="U">
-<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
-
-Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
-Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
-
-The BMP180 is the function compatible successor of the BMP085, a new generation of high
-precision digital pressure sensors for consumer applications.&lt;p&gt;
-The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
-PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
-fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
-system integration with a microcontroller.&lt;p&gt;
-The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
-well as long term stability.&lt;p&gt;
-
-Key features:&lt;p&gt;
-
-- Temperature measurement included&lt;br&gt;
-- I2C interface&lt;br&gt;
-- Fully calibrated&lt;br&gt;
-- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
-- MSL 1&lt;p&gt;
-
-Basic specs:&lt;p&gt;
-
-Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
-Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
-Package: LGA package with metal lid&lt;br&gt;
-Small footprint: 3.6mm x 3.8mm&lt;br&gt;
-Super-flat: 0.93mm height&lt;br&gt;
-Low power: 5μA at 1 sample / sec. in standard mode&lt;br&gt;
-Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
-
-Typical applications:&lt;p&gt;
-
-- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
-- In- and out-door navigation&lt;br&gt;
-- Leisure and sports&lt;br&gt;
-- Weather forecast&lt;br&gt;
-- Vertical velocity indication (rise/sink speed)</description>
-<gates>
-<gate name="G$1" symbol="BMP180" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BMP180">
-<connects>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
-<connect gate="G$1" pin="VDDIO" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="burr-brown">
 <description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -6324,7 +6227,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$1" library="tickTockLibrary" deviceset="OPA381" device="" value="OPA381"/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U4" library="SparkFun-Sensors" deviceset="BMP180" device=""/>
 <part name="IC3" library="burr-brown" deviceset="REF200" device="U"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6341,7 +6243,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="BMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="BMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
 <part name="SUPPLY22" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -6366,6 +6268,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3-Pin"/>
 <part name="X2" library="SparkFun-Connectors" deviceset="DB9" device="MALE"/>
+<part name="U$2" library="tickTockLibrary" deviceset="BME280" device="BME280-LGA"/>
+<part name="BMPC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6549,37 +6453,36 @@ LC303J2J</text>
 <instance part="GND21" gate="1" x="88.9" y="266.7"/>
 <instance part="U$1" gate="G$1" x="109.22" y="281.94"/>
 <instance part="GND22" gate="1" x="205.74" y="337.82"/>
-<instance part="U4" gate="G$1" x="373.38" y="142.24" rot="R180"/>
 <instance part="IC3" gate="G$1" x="383.54" y="68.58"/>
 <instance part="SJ1" gate="1" x="360.68" y="55.88" rot="R90"/>
 <instance part="GND23" gate="1" x="360.68" y="45.72"/>
 <instance part="SJ2" gate="1" x="360.68" y="68.58" rot="R180"/>
 <instance part="SJ3" gate="1" x="406.4" y="68.58" rot="R180"/>
 <instance part="SUPPLY19" gate="G$1" x="353.06" y="88.9"/>
-<instance part="Q2" gate="G$1" x="414.02" y="144.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="408.94" y="149.86" size="1.778" layer="95"/>
-<attribute name="VALUE" x="416.56" y="149.86" size="1.778" layer="96"/>
+<instance part="Q2" gate="G$1" x="485.14" y="144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="480.06" y="149.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="487.68" y="149.86" size="1.778" layer="96"/>
 </instance>
-<instance part="BMPR1" gate="G$1" x="398.78" y="160.02" rot="R270"/>
-<instance part="BMPR2" gate="G$1" x="429.26" y="160.02" rot="R270"/>
-<instance part="Q3" gate="G$1" x="472.44" y="139.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="467.36" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="474.98" y="144.78" size="1.778" layer="96"/>
+<instance part="BMPR1" gate="G$1" x="469.9" y="160.02" rot="R270"/>
+<instance part="BMPR2" gate="G$1" x="500.38" y="160.02" rot="R270"/>
+<instance part="Q3" gate="G$1" x="419.1" y="149.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="414.02" y="154.94" size="1.778" layer="95"/>
+<attribute name="VALUE" x="421.64" y="154.94" size="1.778" layer="96"/>
 </instance>
-<instance part="BMPR3" gate="G$1" x="457.2" y="154.94" rot="R270"/>
-<instance part="BMPR4" gate="G$1" x="487.68" y="154.94" rot="R270"/>
-<instance part="SUPPLY20" gate="G$1" x="398.78" y="170.18"/>
-<instance part="SUPPLY23" gate="G$1" x="457.2" y="170.18"/>
-<instance part="SUPPLY25" gate="G$1" x="342.9" y="170.18"/>
-<instance part="GND24" gate="1" x="365.76" y="154.94"/>
-<instance part="BMPC1" gate="G$1" x="350.52" y="162.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="357.759" y="166.624" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="355.219" y="161.544" size="1.778" layer="96" rot="R180"/>
+<instance part="BMPR3" gate="G$1" x="403.86" y="165.1" rot="R270"/>
+<instance part="BMPR4" gate="G$1" x="434.34" y="165.1" rot="R270"/>
+<instance part="SUPPLY20" gate="G$1" x="469.9" y="170.18"/>
+<instance part="SUPPLY23" gate="G$1" x="403.86" y="180.34"/>
+<instance part="SUPPLY25" gate="G$1" x="355.6" y="172.72"/>
+<instance part="GND24" gate="1" x="353.06" y="119.38"/>
+<instance part="BMPC1" gate="G$1" x="312.42" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="308.356" y="157.099" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="313.436" y="154.559" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY22" gate="G$1" x="414.02" y="170.18"/>
-<instance part="SUPPLY24" gate="G$1" x="472.44" y="170.18"/>
-<instance part="SUPPLY26" gate="G$1" x="429.26" y="180.34"/>
-<instance part="SUPPLY27" gate="G$1" x="487.68" y="180.34"/>
+<instance part="SUPPLY22" gate="G$1" x="485.14" y="170.18"/>
+<instance part="SUPPLY24" gate="G$1" x="419.1" y="180.34"/>
+<instance part="SUPPLY26" gate="G$1" x="500.38" y="180.34"/>
+<instance part="SUPPLY27" gate="G$1" x="434.34" y="190.5"/>
 <instance part="ATR2" gate="G$1" x="238.76" y="147.32" rot="R270"/>
 <instance part="ATR3" gate="G$1" x="248.92" y="147.32" rot="R270"/>
 <instance part="ATR4" gate="G$1" x="259.08" y="147.32" rot="R270"/>
@@ -6600,6 +6503,11 @@ LC303J2J</text>
 <instance part="STANDOFF4" gate="G$1" x="487.68" y="292.1"/>
 <instance part="JP9" gate="G$1" x="220.98" y="83.82" rot="R270"/>
 <instance part="X2" gate="G$1" x="528.32" y="375.92"/>
+<instance part="U$2" gate="G$1" x="355.6" y="147.32"/>
+<instance part="BMPC2" gate="G$1" x="327.66" y="137.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="323.596" y="144.399" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="328.676" y="141.859" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6796,21 +6704,32 @@ LC303J2J</text>
 <wire x1="360.68" y1="48.26" x2="360.68" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="358.14" y1="147.32" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="147.32" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="162.56" x2="365.76" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="162.56" x2="365.76" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="BMPC1" gate="G$1" pin="2"/>
-<wire x1="353.06" y1="162.56" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
-<junction x="355.6" y="162.56"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="IN+"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="93.98" y1="274.32" x2="88.9" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="274.32" x2="88.9" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@1"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="353.06" y1="129.54" x2="353.06" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND@2"/>
+<wire x1="353.06" y1="127" x2="353.06" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="129.54" x2="358.14" y2="127" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="127" x2="353.06" y2="127" width="0.1524" layer="91"/>
+<junction x="353.06" y="127"/>
+<wire x1="353.06" y1="127" x2="327.66" y2="127" width="0.1524" layer="91"/>
+<pinref part="BMPC2" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="127" x2="327.66" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="BMPC1" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="127" x2="312.42" y2="127" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="127" x2="312.42" y2="144.78" width="0.1524" layer="91"/>
+<junction x="327.66" y="127"/>
+<junction x="358.14" y="127"/>
+<pinref part="U$2" gate="G$1" pin="SDO"/>
+<wire x1="373.38" y1="142.24" x2="378.46" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="142.24" x2="378.46" y2="127" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="127" x2="358.14" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IR_PWM" class="0">
@@ -6930,12 +6849,12 @@ LC303J2J</text>
 <segment>
 <pinref part="BMPR2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY26" gate="G$1" pin="5V"/>
-<wire x1="429.26" y1="165.1" x2="429.26" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="165.1" x2="500.38" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BMPR4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY27" gate="G$1" pin="5V"/>
-<wire x1="487.68" y1="160.02" x2="487.68" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="170.18" x2="434.34" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="V+"/>
@@ -7161,36 +7080,42 @@ LC303J2J</text>
 <segment>
 <pinref part="SUPPLY23" gate="G$1" pin="3.3V"/>
 <pinref part="BMPR3" gate="G$1" pin="1"/>
-<wire x1="457.2" y1="170.18" x2="457.2" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="VDD"/>
-<wire x1="358.14" y1="137.16" x2="342.9" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="137.16" x2="342.9" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="VDDIO"/>
-<wire x1="342.9" y1="142.24" x2="342.9" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="162.56" x2="342.9" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="142.24" x2="342.9" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
-<pinref part="BMPC1" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="162.56" x2="342.9" y2="162.56" width="0.1524" layer="91"/>
-<junction x="342.9" y="142.24"/>
-<junction x="342.9" y="162.56"/>
+<wire x1="403.86" y1="180.34" x2="403.86" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <pinref part="SUPPLY22" gate="G$1" pin="3.3V"/>
-<wire x1="414.02" y1="152.4" x2="414.02" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="485.14" y1="152.4" x2="485.14" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
-<wire x1="472.44" y1="147.32" x2="472.44" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="157.48" x2="419.1" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BMPR1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
-<wire x1="398.78" y1="165.1" x2="398.78" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="469.9" y1="165.1" x2="469.9" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
+<wire x1="355.6" y1="165.1" x2="355.6" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="167.64" x2="355.6" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="167.64" x2="378.46" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="167.64" x2="378.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="157.48" x2="370.84" y2="157.48" width="0.1524" layer="91"/>
+<junction x="355.6" y="167.64"/>
+<pinref part="BMPC1" gate="G$1" pin="2"/>
+<wire x1="312.42" y1="152.4" x2="312.42" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="167.64" x2="327.66" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="BMPC2" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="167.64" x2="355.6" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="139.7" x2="327.66" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="147.32" x2="340.36" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="147.32" x2="327.66" y2="167.64" width="0.1524" layer="91"/>
+<junction x="327.66" y="147.32"/>
+<junction x="327.66" y="167.64"/>
 </segment>
 </net>
 <net name="USB_DTR" class="0">
@@ -7411,23 +7336,23 @@ LC303J2J</text>
 <net name="N$15" class="0">
 <segment>
 <pinref part="BMPR1" gate="G$1" pin="2"/>
-<wire x1="398.78" y1="154.94" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="469.9" y1="154.94" x2="469.9" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="398.78" y1="144.78" x2="408.94" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="SCL"/>
-<wire x1="388.62" y1="144.78" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
-<junction x="398.78" y="144.78"/>
+<wire x1="469.9" y1="144.78" x2="480.06" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SCK"/>
+<wire x1="373.38" y1="144.78" x2="469.9" y2="144.78" width="0.1524" layer="91"/>
+<junction x="469.9" y="144.78"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="419.1" y1="144.78" x2="429.26" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="490.22" y1="144.78" x2="500.38" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="BMPR2" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="144.78" x2="429.26" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="144.78" x2="449.58" y2="144.78" width="0.1524" layer="91"/>
-<label x="444.5" y="144.78" size="1.778" layer="95"/>
-<junction x="429.26" y="144.78"/>
+<wire x1="500.38" y1="144.78" x2="500.38" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="144.78" x2="520.7" y2="144.78" width="0.1524" layer="91"/>
+<label x="515.62" y="144.78" size="1.778" layer="95"/>
+<junction x="500.38" y="144.78"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT16/SCL)PC0"/>
@@ -7438,23 +7363,24 @@ LC303J2J</text>
 <net name="N$18" class="0">
 <segment>
 <pinref part="BMPR3" gate="G$1" pin="2"/>
-<wire x1="457.2" y1="149.86" x2="457.2" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="160.02" x2="403.86" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="457.2" y1="139.7" x2="467.36" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="SDA"/>
-<wire x1="457.2" y1="139.7" x2="388.62" y2="139.7" width="0.1524" layer="91"/>
-<junction x="457.2" y="139.7"/>
+<wire x1="403.86" y1="149.86" x2="414.02" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SDI"/>
+<wire x1="373.38" y1="147.32" x2="403.86" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="147.32" x2="403.86" y2="149.86" width="0.1524" layer="91"/>
+<junction x="403.86" y="149.86"/>
 </segment>
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="477.52" y1="139.7" x2="487.68" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="149.86" x2="434.34" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="BMPR4" gate="G$1" pin="2"/>
-<wire x1="487.68" y1="139.7" x2="487.68" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="139.7" x2="508" y2="139.7" width="0.1524" layer="91"/>
-<label x="502.92" y="139.7" size="1.778" layer="95"/>
-<junction x="487.68" y="139.7"/>
+<wire x1="434.34" y1="149.86" x2="434.34" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="149.86" x2="454.66" y2="149.86" width="0.1524" layer="91"/>
+<label x="449.58" y="149.86" size="1.778" layer="95"/>
+<junction x="434.34" y="149.86"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT17/SDA)PC1"/>
