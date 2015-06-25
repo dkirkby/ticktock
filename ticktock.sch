@@ -6493,6 +6493,9 @@ sensor is in case we can't
 solder the BME280 onto
 the board and need to go
 to a bigger package</text>
+<text x="205.74" y="109.22" size="1.778" layer="91">Tx/Rx from mcu's perspective
+e.g. mcu writes to GPS_TX
+reads from GPS_RX</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7227,7 +7230,7 @@ to a bigger package</text>
 <wire x1="27.94" y1="58.42" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_RX" class="0">
+<net name="USB_TX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT25/TXD0)PD1"/>
 <wire x1="165.1" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
@@ -7239,7 +7242,7 @@ to a bigger package</text>
 <label x="101.6" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB_TX" class="0">
+<net name="USB_RX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(PCINT24/RXD0)PD0"/>
 <wire x1="165.1" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
