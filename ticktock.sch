@@ -6318,7 +6318,7 @@ Typical applications:&lt;p&gt;
 <part name="MAXC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="MAXC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="U1" library="SparkFun-DigitalIC" deviceset="MAX232" device="SOIC16"/>
+<part name="U1" library="SparkFun-DigitalIC" deviceset="MAX232" device="SOIC16" value="MAX232"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="MAXC3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="MAXC5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
@@ -6356,7 +6356,7 @@ Typical applications:&lt;p&gt;
 <part name="ATL1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805" value="10uH"/>
 <part name="ATC3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS" value="ISP PGMR"/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun-FreqCtrl" deviceset="OSCILLATOR" device="SMD"/>
