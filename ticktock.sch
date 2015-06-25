@@ -1031,6 +1031,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="0.6" y1="1.25" x2="-0.6" y2="1.25" width="0.2032" layer="21"/>
 <text x="-3.048" y="1.524" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.048" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0.45" y="0.9" radius="0.0559" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6420,7 +6421,7 @@ Typical applications:&lt;p&gt;
 <part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3-Pin"/>
-<part name="X2" library="SparkFun-Connectors" deviceset="DB9" device="MALE"/>
+<part name="X2" library="SparkFun-Connectors" deviceset="DB9" device="MALE" value="DB9 Male"/>
 <part name="U$2" library="tickTockLibrary" deviceset="BME280" device="BME280-LGA"/>
 <part name="BMPC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
 <part name="U4" library="SparkFun-Sensors" deviceset="BMP180" device=""/>
@@ -7693,26 +7694,45 @@ to a bigger package</text>
 <errors>
 <approved hash="202,1,436.88,375.92,U1,T2IN,,,,"/>
 <approved hash="202,1,472.44,370.84,U1,R2IN,,,,"/>
+<approved hash="104,1,111.76,160.02,IC1,AVCC,N$13,,,"/>
+<approved hash="104,1,111.76,185.42,IC1,VCC,5V,,,"/>
+<approved hash="104,1,111.76,187.96,IC1,VCC,5V,,,"/>
+<approved hash="104,1,111.76,182.88,IC1,VCC,5V,,,"/>
 <approved hash="202,1,58.42,38.1,U3,RESET,,,,"/>
 <approved hash="202,1,58.42,43.18,U3,OSCI,,,,"/>
 <approved hash="202,1,88.9,45.72,U3,DSR,,,,"/>
 <approved hash="202,1,88.9,43.18,U3,DCD,,,,"/>
 <approved hash="202,1,88.9,40.64,U3,RI,,,,"/>
+<approved hash="104,1,58.42,30.48,U3,GND7,GND,,,"/>
+<approved hash="104,1,58.42,27.94,U3,GND18,GND,,,"/>
+<approved hash="104,1,58.42,25.4,U3,GND21,GND,,,"/>
+<approved hash="104,1,58.42,48.26,U3,VCCIO,5V,,,"/>
+<approved hash="104,1,58.42,33.02,U3,AGND,GND,,,"/>
+<approved hash="104,1,58.42,53.34,U3,VCC,5V,,,"/>
 <approved hash="202,1,88.9,35.56,U3,TXLED,,,,"/>
 <approved hash="202,1,88.9,33.02,U3,RXLED,,,,"/>
 <approved hash="202,1,88.9,53.34,U3,CTS,,,,"/>
 <approved hash="202,1,88.9,30.48,U3,PWREN,,,,"/>
 <approved hash="202,1,88.9,27.94,U3,TXDEN,,,,"/>
 <approved hash="202,1,88.9,25.4,U3,SLEEP,,,,"/>
+<approved hash="104,1,386.08,340.36,IC2,V+,5V,,,"/>
+<approved hash="104,1,386.08,309.88,IC2,V-,GND,,,"/>
 <approved hash="202,1,368.3,76.2,IC3,MIN,,,,"/>
+<approved hash="104,1,355.6,109.22,U4,VDD,3.3V,,,"/>
+<approved hash="104,1,355.6,114.3,U4,VDDIO,3.3V,,,"/>
 <approved hash="208,1,43.18,50.8,3.3V,sup,,,,"/>
 <approved hash="208,1,58.42,50.8,3.3V,out,,,,"/>
 <approved hash="208,1,124.46,38.1,3.3V,sup,,,,"/>
-<approved hash="208,1,457.2,170.18,3.3V,sup,,,,"/>
-<approved hash="208,1,342.9,170.18,3.3V,sup,,,,"/>
-<approved hash="208,1,414.02,170.18,3.3V,sup,,,,"/>
-<approved hash="208,1,472.44,170.18,3.3V,sup,,,,"/>
-<approved hash="208,1,398.78,170.18,3.3V,sup,,,,"/>
+<approved hash="208,1,398.78,190.5,3.3V,sup,,,,"/>
+<approved hash="208,1,480.06,180.34,3.3V,sup,,,,"/>
+<approved hash="208,1,414.02,190.5,3.3V,sup,,,,"/>
+<approved hash="208,1,464.82,180.34,3.3V,sup,,,,"/>
+<approved hash="208,1,345.44,195.58,3.3V,sup,,,,"/>
+<approved hash="208,1,332.74,129.54,3.3V,sup,,,,"/>
+<approved hash="115,1,139.596,107.846,FRAME1,,,,,"/>
+<approved hash="115,1,421.536,107.846,FRAME2,,,,,"/>
+<approved hash="115,1,139.596,326.286,FRAME3,,,,,"/>
+<approved hash="115,1,421.536,326.286,FRAME4,,,,,"/>
 </errors>
 </schematic>
 </drawing>

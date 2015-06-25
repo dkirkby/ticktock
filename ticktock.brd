@@ -242,6 +242,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0.6" y1="1.25" x2="-0.6" y2="1.25" width="0.2032" layer="21"/>
 <text x="-3.048" y="1.524" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.048" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0.45" y="0.9" radius="0.0559" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1189,7 +1190,7 @@ design rules under a new name.</description>
 <element name="STANDOFF3" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="56.642" y="15.24"/>
 <element name="STANDOFF4" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="17.018" y="3.556"/>
 <element name="JP9" library="SparkFun-Connectors" package="1X03_LOCK" value="3-Pin" x="16.51" y="10.16" rot="R90"/>
-<element name="X2" library="SparkFun-Connectors" package="DB9_MALE" value="" x="9.398" y="51.562" rot="R90"/>
+<element name="X2" library="SparkFun-Connectors" package="DB9_MALE" value="DB9 Male" x="9.398" y="51.562" rot="R90"/>
 <element name="U$2" library="tickTockLibrary" package="BME280" value="BME280BME280-LGA" x="32.004" y="60.96"/>
 <element name="BMPC2" library="SparkFun-Capacitors" package="0805" value="100nF" x="26.924" y="62.992"/>
 <element name="U4" library="SparkFun-Sensors" package="BMP180" value="BMP180" x="46.228" y="64.008" rot="R270"/>
