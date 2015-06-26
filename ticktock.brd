@@ -245,15 +245,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="REXT" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="OUT" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="EN" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<wire x1="1.5" y1="0.8" x2="-1.5" y2="0.8" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-0.8" x2="1.5" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-0.8" x2="1.5" y2="0.8" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="-0.5" x2="-1.2" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-1.2" y1="-0.5" x2="-1.2" y2="-0.55" width="0.127" layer="21"/>
 <wire x1="-1.2" y1="-0.55" x2="-1.25" y2="-0.55" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="-0.55" x2="-1.25" y2="-0.5" width="0.127" layer="21"/>
-<text x="-1.5" y="1.75" size="0.4064" layer="25">Name</text>
+<text x="-2.54" y="-3.81" size="1.016" layer="27" ratio="20">&gt;VALUE</text>
+<text x="-2.54" y="2.54" size="1.016" layer="25" ratio="20">&gt;NAME</text>
 </package>
 <package name="MSOP08">
 <wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
@@ -1173,7 +1172,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="55.372" y="31.4325" size="1.016" layer="25" ratio="20"/>
 <attribute name="VALUE" x="58.928" y="30.099" size="1.016" layer="27" ratio="20"/>
 </element>
-<element name="AL5802" library="tickTockLibrary" package="AL5802" value="AL5802" x="52.324" y="28.448" smashed="yes" rot="R270"/>
+<element name="IC5" library="tickTockLibrary" package="AL5802" value="AL5802" x="52.324" y="28.448" smashed="yes" rot="R270">
+<attribute name="NAME" x="52.832" y="27.178" size="1.016" layer="25" ratio="20" rot="R90"/>
+</element>
 <element name="PKG-CABLE" library="SparkFun-Connectors" package="MINI-DIN6" value="MINI DIN-6" x="60.96" y="50.8" smashed="yes" rot="R270">
 <attribute name="VALUE" x="50.8" y="56.134" size="1.016" layer="27" ratio="20"/>
 </element>
@@ -1222,7 +1223,7 @@ design rules under a new name.</description>
 <element name="FTC1" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="23.114" y="7.366" smashed="yes" rot="R180">
 <attribute name="VALUE" x="17.526" y="6.985" size="1.016" layer="27" ratio="20"/>
 </element>
-<element name="FTC3" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="23.114" y="2.794" smashed="yes" rot="R180">
+<element name="FTC3" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="22.352" y="2.794" smashed="yes" rot="R180">
 <attribute name="VALUE" x="19.05" y="0.889" size="1.016" layer="27" ratio="20"/>
 </element>
 <element name="ATC1" library="SparkFun-Capacitors" package="0805" value=".1uF" x="34.036" y="12.446" smashed="yes" rot="R90">
@@ -1389,7 +1390,7 @@ design rules under a new name.</description>
 <signals>
 <signal name="GND">
 <contactref element="Q1" pad="2"/>
-<contactref element="AL5802" pad="GND"/>
+<contactref element="IC5" pad="GND"/>
 <contactref element="RLED" pad="1"/>
 <contactref element="U1" pad="15"/>
 <contactref element="MAXC5" pad="1"/>
@@ -1547,7 +1548,7 @@ design rules under a new name.</description>
 <wire x1="37.3" y1="19.266" x2="37.592" y2="19.558" width="0.381" layer="1"/>
 </signal>
 <signal name="5V">
-<contactref element="AL5802" pad="BIAS"/>
+<contactref element="IC5" pad="BIAS"/>
 <contactref element="PKG-CABLE" pad="1"/>
 <contactref element="U1" pad="16"/>
 <contactref element="MAXC3" pad="1"/>
@@ -1727,14 +1728,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="Q1" pad="3"/>
-<contactref element="AL5802" pad="EN"/>
+<contactref element="IC5" pad="EN"/>
 <wire x1="48.677" y1="27.432" x2="51.058" y2="27.432" width="0.508" layer="1"/>
 <wire x1="51.058" y1="27.432" x2="51.124" y2="27.498" width="0.508" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="AL5802" pad="FB"/>
+<contactref element="IC5" pad="FB"/>
 <contactref element="RLED" pad="2"/>
-<contactref element="AL5802" pad="REXT"/>
+<contactref element="IC5" pad="REXT"/>
 <wire x1="56.25" y1="30.48" x2="55.626" y2="30.48" width="0.508" layer="1"/>
 <wire x1="55.626" y1="30.48" x2="54.61" y2="29.464" width="0.508" layer="1"/>
 <wire x1="54.61" y1="29.464" x2="53.59" y2="29.464" width="0.508" layer="1"/>
@@ -1744,7 +1745,7 @@ design rules under a new name.</description>
 <wire x1="54.61" y1="28.702" x2="54.61" y2="29.464" width="0.508" layer="1"/>
 </signal>
 <signal name="IR_CATHODE">
-<contactref element="AL5802" pad="OUT"/>
+<contactref element="IC5" pad="OUT"/>
 <contactref element="PKG-CABLE" pad="2"/>
 <wire x1="51.124" y1="29.398" x2="50.866" y2="29.398" width="0.508" layer="1"/>
 <wire x1="50.866" y1="29.398" x2="50.292" y2="29.972" width="0.508" layer="1"/>
@@ -2017,7 +2018,7 @@ design rules under a new name.</description>
 <wire x1="27.178" y1="5.842" x2="27.432" y2="6.096" width="0.508" layer="1"/>
 <wire x1="27.432" y1="6.096" x2="27.432" y2="6.35" width="0.508" layer="1"/>
 <wire x1="27.178" y1="4.064" x2="27.178" y2="5.842" width="0.4064" layer="1"/>
-<wire x1="24.638" y1="2.794" x2="24.014" y2="2.794" width="0.508" layer="1"/>
+<wire x1="24.638" y1="2.794" x2="23.252" y2="2.794" width="0.508" layer="1"/>
 </signal>
 <signal name="USB_DTR">
 <contactref element="U3" pad="2"/>
@@ -2168,7 +2169,8 @@ design rules under a new name.</description>
 <wire x1="55.372" y1="25.03" x2="53.34" y2="25.03" width="0.381" layer="1"/>
 <wire x1="58.246" y1="19.996" x2="56.966" y2="19.996" width="0.381" layer="1"/>
 <wire x1="56.966" y1="19.996" x2="55.626" y2="21.336" width="0.381" layer="1"/>
-<wire x1="55.626" y1="21.336" x2="55.626" y2="24.776" width="0.381" layer="1"/>
+<wire x1="55.626" y1="21.336" x2="55.626" y2="24.638" width="0.381" layer="1"/>
+<wire x1="55.626" y1="24.638" x2="55.626" y2="24.776" width="0.381" layer="1"/>
 <wire x1="55.626" y1="24.776" x2="55.372" y2="25.03" width="0.381" layer="1"/>
 <wire x1="53.34" y1="25.03" x2="50.8" y2="25.03" width="0.381" layer="1"/>
 <wire x1="50.8" y1="25.03" x2="46.598" y2="25.03" width="0.381" layer="1"/>
@@ -2177,8 +2179,10 @@ design rules under a new name.</description>
 <wire x1="45.276" y1="26.86" x2="45.466" y2="26.67" width="0.381" layer="1"/>
 <wire x1="45.466" y1="26.67" x2="45.466" y2="26.162" width="0.381" layer="1"/>
 <wire x1="55.51" y1="25.03" x2="55.51" y2="25.538" width="0.508" layer="1"/>
-<wire x1="55.51" y1="25.538" x2="56.388" y2="26.416" width="0.508" layer="1"/>
+<wire x1="55.51" y1="25.538" x2="55.626" y2="25.654" width="0.508" layer="1"/>
+<wire x1="55.626" y1="25.654" x2="56.388" y2="26.416" width="0.508" layer="1"/>
 <wire x1="56.388" y1="26.416" x2="57.404" y2="26.416" width="0.508" layer="1"/>
+<wire x1="55.626" y1="25.654" x2="55.626" y2="24.638" width="0.4064" layer="1"/>
 </signal>
 <signal name="VTEMP">
 <contactref element="IC3" pad="1"/>

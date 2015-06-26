@@ -967,15 +967,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <smd name="REXT" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="OUT" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
 <smd name="EN" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<wire x1="1.5" y1="0.8" x2="-1.5" y2="0.8" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="0.8" x2="-1.5" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-0.8" x2="1.5" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-0.8" x2="1.5" y2="0.8" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="-0.5" x2="-1.2" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-1.2" y1="-0.5" x2="-1.2" y2="-0.55" width="0.127" layer="21"/>
 <wire x1="-1.2" y1="-0.55" x2="-1.25" y2="-0.55" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="-0.55" x2="-1.25" y2="-0.5" width="0.127" layer="21"/>
-<text x="-1.5" y="1.75" size="0.4064" layer="25">Name</text>
+<text x="-2.54" y="-3.81" size="1.016" layer="27" ratio="20">&gt;VALUE</text>
+<text x="-2.54" y="2.54" size="1.016" layer="25" ratio="20">&gt;NAME</text>
 </package>
 <package name="MSOP08">
 <wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
@@ -1081,7 +1080,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <gate name="G$1" symbol="AL5802" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="AL5802">
+<device name="AL5802" package="AL5802">
 <connects>
 <connect gate="G$1" pin="BIAS" pad="BIAS"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
@@ -6311,7 +6310,7 @@ Typical applications:&lt;p&gt;
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW"/>
 <part name="RLED" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20"/>
-<part name="AL5802" library="tickTockLibrary" deviceset="AL5802" device=""/>
+<part name="IC5" library="tickTockLibrary" deviceset="AL5802" device="AL5802" value="AL5802"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="PKG-CABLE" library="SparkFun-Connectors" deviceset="MINI-DIN6" device="PTH" value="MINI DIN-6"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -6513,7 +6512,7 @@ reads from GPS_RX</text>
 <attribute name="VALUE" x="33.02" y="375.92" size="1.778" layer="96"/>
 </instance>
 <instance part="RLED" gate="G$1" x="93.98" y="355.6" rot="R90"/>
-<instance part="AL5802" gate="G$1" x="86.36" y="378.46" rot="R180"/>
+<instance part="IC5" gate="G$1" x="86.36" y="378.46" rot="R180"/>
 <instance part="GND2" gate="1" x="78.74" y="342.9"/>
 <instance part="PKG-CABLE" gate="G$1" x="243.84" y="350.52" rot="R180"/>
 <instance part="SUPPLY2" gate="G$1" x="205.74" y="363.22"/>
@@ -6695,7 +6694,7 @@ reads from GPS_RX</text>
 <wire x1="60.96" y1="375.92" x2="60.96" y2="368.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="AL5802" gate="G$1" pin="GND"/>
+<pinref part="IC5" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="78.74" y1="365.76" x2="78.74" y2="347.98" width="0.1524" layer="91"/>
 <pinref part="RLED" gate="G$1" pin="1"/>
@@ -6935,7 +6934,7 @@ reads from GPS_RX</text>
 <net name="5V" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-<pinref part="AL5802" gate="G$1" pin="BIAS"/>
+<pinref part="IC5" gate="G$1" pin="BIAS"/>
 <wire x1="86.36" y1="401.32" x2="86.36" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="398.78" x2="86.36" y2="391.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="398.78" x2="116.84" y2="398.78" width="0.1524" layer="91"/>
@@ -7082,24 +7081,24 @@ reads from GPS_RX</text>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="60.96" y1="386.08" x2="60.96" y2="393.7" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="393.7" x2="78.74" y2="393.7" width="0.1524" layer="91"/>
-<pinref part="AL5802" gate="G$1" pin="EN"/>
+<pinref part="IC5" gate="G$1" pin="EN"/>
 <wire x1="78.74" y1="393.7" x2="78.74" y2="391.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="AL5802" gate="G$1" pin="FB"/>
+<pinref part="IC5" gate="G$1" pin="FB"/>
 <wire x1="86.36" y1="365.76" x2="86.36" y2="360.68" width="0.1524" layer="91"/>
 <pinref part="RLED" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="360.68" x2="93.98" y2="360.68" width="0.1524" layer="91"/>
-<pinref part="AL5802" gate="G$1" pin="REXT"/>
+<pinref part="IC5" gate="G$1" pin="REXT"/>
 <wire x1="93.98" y1="360.68" x2="93.98" y2="365.76" width="0.1524" layer="91"/>
 <junction x="93.98" y="360.68"/>
 </segment>
 </net>
 <net name="IR_CATHODE" class="0">
 <segment>
-<pinref part="AL5802" gate="G$1" pin="OUT"/>
+<pinref part="IC5" gate="G$1" pin="OUT"/>
 <wire x1="93.98" y1="391.16" x2="93.98" y2="393.7" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="393.7" x2="116.84" y2="393.7" width="0.1524" layer="91"/>
 <label x="101.6" y="391.16" size="1.778" layer="95"/>
