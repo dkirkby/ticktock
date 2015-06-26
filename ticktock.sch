@@ -6414,8 +6414,8 @@ Typical applications:&lt;p&gt;
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="JP6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="JP7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="VTEMP" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PDOUT" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="STANDOFF1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
@@ -6664,8 +6664,8 @@ reads from GPS_RX</text>
 <instance part="JP3" gate="G$1" x="210.82" y="198.12" rot="R270"/>
 <instance part="JP4" gate="G$1" x="220.98" y="198.12" rot="R270"/>
 <instance part="JP5" gate="G$1" x="231.14" y="198.12" rot="R270"/>
-<instance part="JP6" gate="G$1" x="200.66" y="198.12" rot="R270"/>
-<instance part="JP7" gate="G$1" x="190.5" y="198.12" rot="R270"/>
+<instance part="VTEMP" gate="G$1" x="200.66" y="198.12" rot="R270"/>
+<instance part="PDOUT" gate="G$1" x="190.5" y="198.12" rot="R270"/>
 <instance part="STANDOFF1" gate="G$1" x="487.68" y="307.34"/>
 <instance part="STANDOFF2" gate="G$1" x="487.68" y="302.26"/>
 <instance part="STANDOFF3" gate="G$1" x="487.68" y="297.18"/>
@@ -7465,7 +7465,7 @@ reads from GPS_RX</text>
 <pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
 <wire x1="165.1" y1="180.34" x2="190.5" y2="180.34" width="0.1524" layer="91"/>
 <label x="172.72" y="180.34" size="1.778" layer="95"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
+<pinref part="PDOUT" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="180.34" x2="190.5" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7506,7 +7506,7 @@ reads from GPS_RX</text>
 <pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
 <wire x1="165.1" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
 <label x="190.5" y="177.8" size="1.778" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="VTEMP" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="190.5" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
