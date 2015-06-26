@@ -5483,12 +5483,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
 <wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
 <wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.1524" layer="21"/>
-<wire x1="1.299" y1="1.624" x2="1.624" y2="1.299" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.626" y1="1.299" x2="-1.301" y2="1.624" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.626" y1="-1.301" x2="-1.301" y2="-1.626" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.299" y1="-1.626" x2="1.624" y2="-1.301" width="0.1524" layer="21" curve="90"/>
-<wire x1="-1.341" y1="-1.626" x2="1.299" y2="-1.626" width="0.1524" layer="21"/>
-<wire x1="-1.301" y1="1.624" x2="1.299" y2="1.624" width="0.1524" layer="21"/>
 <circle x="-1.0456" y="-1.0406" radius="0.2448" width="0.0508" layer="21"/>
 <smd name="8" x="-0.976" y="2.262" dx="0.4" dy="1" layer="1"/>
 <smd name="7" x="-0.326" y="2.262" dx="0.4" dy="1" layer="1"/>
@@ -5508,6 +5502,8 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <rectangle x1="-0.4475" y1="-2.5069" x2="-0.2037" y2="-1.65" layer="51"/>
 <rectangle x1="0.2025" y1="-2.5069" x2="0.4463" y2="-1.65" layer="51"/>
 <rectangle x1="0.8525" y1="-2.5069" x2="1.0963" y2="-1.65" layer="51"/>
+<wire x1="-1.6256" y1="1.6256" x2="-1.6256" y2="-1.6256" width="0.254" layer="21"/>
+<wire x1="1.6256" y1="-1.6256" x2="1.6256" y2="1.6256" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5617,10 +5613,10 @@ Upgrade for LT1394 and LT1016 Designs</description>
 </package>
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
-<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
-<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<wire x1="-2.4128" y1="-1.803" x2="2.4128" y2="-1.803" width="0.1524" layer="51"/>
+<wire x1="2.4128" y1="-1.803" x2="2.4128" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.4128" y1="1.803" x2="-2.4128" y2="1.803" width="0.1524" layer="51"/>
+<wire x1="-2.4128" y1="1.803" x2="-2.4128" y2="-1.803" width="0.1524" layer="21"/>
 <circle x="-1.8034" y="-0.9906" radius="0.3556" width="0.0508" layer="21"/>
 <smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
 <smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
