@@ -6313,7 +6313,7 @@ Typical applications:&lt;p&gt;
 <part name="RLED" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20"/>
 <part name="AL5802" library="tickTockLibrary" deviceset="AL5802" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="PKG-CABLE" library="SparkFun-Connectors" deviceset="MINI-DIN6" device="PTH"/>
+<part name="PKG-CABLE" library="SparkFun-Connectors" deviceset="MINI-DIN6" device="PTH" value="MINI DIN-6"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="MAXC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="MAXC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
@@ -6346,10 +6346,10 @@ Typical applications:&lt;p&gt;
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="ATC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="ATC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="FTC2" library="SparkFun-Capacitors" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="ATR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="ATC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="ATC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -6379,9 +6379,9 @@ Typical applications:&lt;p&gt;
 <part name="CFB" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="??"/>
 <part name="AMPC1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$1" library="tickTockLibrary" deviceset="OPA381" device="" value="OPA381"/>
+<part name="IC4" library="tickTockLibrary" deviceset="OPA381" device="" value="OPA381"/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="IC3" library="burr-brown" deviceset="REF200" device="U"/>
+<part name="IC3" library="burr-brown" deviceset="REF200" device="U" value="REF200"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
@@ -6620,7 +6620,7 @@ reads from GPS_RX</text>
 <attribute name="VALUE" x="106.299" y="250.444" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND21" gate="1" x="88.9" y="266.7"/>
-<instance part="U$1" gate="G$1" x="109.22" y="281.94"/>
+<instance part="IC4" gate="G$1" x="109.22" y="281.94"/>
 <instance part="GND22" gate="1" x="205.74" y="337.82"/>
 <instance part="IC3" gate="G$1" x="383.54" y="68.58"/>
 <instance part="SJ1" gate="1" x="360.68" y="55.88" rot="R90"/>
@@ -6860,7 +6860,7 @@ reads from GPS_RX</text>
 <pinref part="AMPC1" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="248.92" x2="109.22" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="248.92" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="V-"/>
+<pinref part="IC4" gate="G$1" pin="V-"/>
 <wire x1="109.22" y1="269.24" x2="109.22" y2="248.92" width="0.1524" layer="91"/>
 <junction x="109.22" y="248.92"/>
 </segment>
@@ -6880,7 +6880,7 @@ reads from GPS_RX</text>
 <wire x1="360.68" y1="48.26" x2="360.68" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="IN+"/>
+<pinref part="IC4" gate="G$1" pin="IN+"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="93.98" y1="274.32" x2="88.9" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="274.32" x2="88.9" y2="269.24" width="0.1524" layer="91"/>
@@ -7045,7 +7045,7 @@ reads from GPS_RX</text>
 <wire x1="429.26" y1="180.34" x2="429.26" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="V+"/>
+<pinref part="IC4" gate="G$1" pin="V+"/>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 <wire x1="109.22" y1="294.64" x2="109.22" y2="297.18" width="0.1524" layer="91"/>
 </segment>
@@ -7456,7 +7456,7 @@ reads from GPS_RX</text>
 <pinref part="CFB" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="297.18" x2="134.62" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="297.18" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
+<pinref part="IC4" gate="G$1" pin="OUT"/>
 <wire x1="129.54" y1="281.94" x2="134.62" y2="281.94" width="0.1524" layer="91"/>
 <junction x="134.62" y="297.18"/>
 <junction x="134.62" y="281.94"/>
@@ -7478,7 +7478,7 @@ reads from GPS_RX</text>
 <wire x1="116.84" y1="307.34" x2="119.38" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="307.34" x2="88.9" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="307.34" x2="88.9" y2="287.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="IN-"/>
+<pinref part="IC4" gate="G$1" pin="IN-"/>
 <wire x1="88.9" y1="287.02" x2="93.98" y2="287.02" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="287.02" x2="55.88" y2="287.02" width="0.1524" layer="91"/>
 <label x="53.34" y="289.56" size="1.778" layer="95"/>
