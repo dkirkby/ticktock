@@ -6359,7 +6359,7 @@ Typical applications:&lt;p&gt;
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS" value="ISP PGMR"/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-FreqCtrl" deviceset="OSCILLATOR" device="SMD" value="10MHz XTAL"/>
+<part name="U2" library="SparkFun-FreqCtrl" deviceset="OSCILLATOR" device="SMD" value="XTAL"/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
