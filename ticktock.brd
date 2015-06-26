@@ -576,14 +576,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 <package name="SSOP28DB">
 <description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;</description>
-<wire x1="-5.2" y1="2.925" x2="5.2" y2="2.925" width="0.1524" layer="21"/>
-<wire x1="5.2" y1="2.925" x2="5.2" y2="-2.925" width="0.1524" layer="21"/>
-<wire x1="5.2" y1="-2.925" x2="-5.2" y2="-2.925" width="0.1524" layer="21"/>
-<wire x1="-5.2" y1="-2.925" x2="-5.2" y2="2.925" width="0.1524" layer="21"/>
-<wire x1="-5.038" y1="2.763" x2="5.038" y2="2.763" width="0.0508" layer="27"/>
-<wire x1="5.038" y1="2.763" x2="5.038" y2="-2.763" width="0.0508" layer="27"/>
-<wire x1="5.038" y1="-2.763" x2="-5.038" y2="-2.763" width="0.0508" layer="27"/>
-<wire x1="-5.038" y1="-2.763" x2="-5.038" y2="2.763" width="0.0508" layer="27"/>
+<wire x1="-5.038" y1="2.6614" x2="5.038" y2="2.6614" width="0.3048" layer="27"/>
+<wire x1="5.038" y1="2.6614" x2="5.038" y2="-2.6614" width="0.3048" layer="27"/>
+<wire x1="5.038" y1="-2.6614" x2="-5.038" y2="-2.6614" width="0.3048" layer="27"/>
+<wire x1="-5.038" y1="-2.6614" x2="-5.038" y2="2.6614" width="0.3048" layer="21"/>
 <circle x="-4.225" y="-1.95" radius="0.4596" width="0.1524" layer="21"/>
 <smd name="28" x="-4.225" y="3.656" dx="0.348" dy="1.397" layer="1"/>
 <smd name="27" x="-3.575" y="3.656" dx="0.348" dy="1.397" layer="1"/>
