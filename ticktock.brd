@@ -204,10 +204,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 <package name="SOT23">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="21"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
 <smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
@@ -216,6 +212,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.254" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.762" y2="0.6604" width="0.254" layer="21"/>
+<wire x1="0.762" y1="0.6604" x2="1.4224" y2="0.6604" width="0.254" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.127" width="0.254" layer="21"/>
+<wire x1="-0.1778" y1="-0.6604" x2="0.1778" y2="-0.6604" width="0.254" layer="21"/>
 </package>
 </packages>
 </library>
@@ -294,8 +295,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="51"/>
 <wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="51"/>
 <wire x1="-1.25" y1="1.25" x2="-1.25" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="-1.25" x2="0.6" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="1.25" x2="-0.6" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="-0.55" y1="-1.25" x2="0.55" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="0.55" y1="1.25" x2="-0.55" y2="1.25" width="0.2032" layer="21"/>
 <text x="-3.048" y="1.524" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.048" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="0.45" y="0.9" radius="0.0559" width="0.127" layer="21"/>
