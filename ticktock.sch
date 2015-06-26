@@ -977,22 +977,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="-2.54" y="2.54" size="1.016" layer="25" ratio="20">&gt;NAME</text>
 </package>
 <package name="MSOP08">
-<wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.1524" layer="21"/>
-<wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.1524" layer="21"/>
-<wire x1="1.299" y1="1.624" x2="1.624" y2="1.299" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.626" y1="1.299" x2="-1.301" y2="1.624" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.626" y1="-1.301" x2="-1.301" y2="-1.626" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.299" y1="-1.626" x2="1.624" y2="-1.301" width="0.1524" layer="21" curve="90"/>
-<wire x1="-1.341" y1="-1.626" x2="-1.204" y2="-1.626" width="0.1524" layer="21"/>
-<wire x1="-0.747" y1="-1.626" x2="-0.554" y2="-1.626" width="0.1524" layer="21"/>
-<wire x1="-0.097" y1="-1.626" x2="0.096" y2="-1.626" width="0.1524" layer="21"/>
-<wire x1="0.553" y1="-1.626" x2="0.746" y2="-1.626" width="0.1524" layer="21"/>
-<wire x1="1.203" y1="-1.626" x2="1.299" y2="-1.626" width="0.1524" layer="21"/>
-<wire x1="-1.301" y1="1.624" x2="-1.204" y2="1.624" width="0.1524" layer="21"/>
-<wire x1="-0.747" y1="1.624" x2="-0.554" y2="1.624" width="0.1524" layer="21"/>
-<wire x1="-0.097" y1="1.624" x2="0.096" y2="1.624" width="0.1524" layer="21"/>
-<wire x1="0.553" y1="1.624" x2="0.746" y2="1.624" width="0.1524" layer="21"/>
-<wire x1="1.203" y1="1.624" x2="1.299" y2="1.624" width="0.1524" layer="21"/>
+<wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.2032" layer="21"/>
+<wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.2032" layer="21"/>
 <circle x="-0.9456" y="-0.7906" radius="0.5" width="0.0508" layer="21"/>
 <smd name="8" x="-0.976" y="2.112" dx="0.3" dy="1.2" layer="1"/>
 <smd name="7" x="-0.326" y="2.112" dx="0.3" dy="1.2" layer="1"/>
@@ -1012,6 +998,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <rectangle x1="-0.4475" y1="-2.3569" x2="-0.2037" y2="-1.6256" layer="51"/>
 <rectangle x1="0.2025" y1="-2.3569" x2="0.4463" y2="-1.6256" layer="51"/>
 <rectangle x1="0.8525" y1="-2.3569" x2="1.0963" y2="-1.6256" layer="51"/>
+<wire x1="-1.6256" y1="1.3208" x2="-1.6256" y2="1.6002" width="0.2032" layer="21"/>
+<wire x1="1.6256" y1="1.3208" x2="1.6256" y2="1.6002" width="0.2032" layer="21"/>
+<wire x1="1.6256" y1="-1.2446" x2="1.6256" y2="-1.6002" width="0.2032" layer="21"/>
+<wire x1="-1.6256" y1="-1.016" x2="-1.6256" y2="-1.6002" width="0.2032" layer="21"/>
 </package>
 <package name="BME280">
 <smd name="2" x="1.025" y="0.325" dx="0.5" dy="0.35" layer="1"/>
