@@ -6326,11 +6326,11 @@ Typical applications:&lt;p&gt;
 <part name="MAXC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GPS_10MHZ_IN" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
-<part name="GPS_1PPS_IN" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
+<part name="GPS10MHZ" library="SparkFun-Connectors" deviceset="BNC" device="PTH" value="BNC Conn"/>
+<part name="GPS1PPS" library="SparkFun-Connectors" deviceset="BNC" device="PTH" value="BNC Conn"/>
 <part name="IC1" library="atmel" deviceset="ATMEGA644" device="A"/>
-<part name="U3" library="SparkFun-DigitalIC" deviceset="FT232RL" device="SSOP"/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="USB" device="PTH" value="USB-B"/>
+<part name="U3" library="SparkFun-DigitalIC" deviceset="FT232RL" device="SSOP" value="FT232"/>
+<part name="JP1" library="SparkFun-Connectors" deviceset="USB" device="PTH" value="Square USB"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -6359,13 +6359,13 @@ Typical applications:&lt;p&gt;
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS" value="ISP PGMR"/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-FreqCtrl" deviceset="OSCILLATOR" device="SMD"/>
+<part name="U2" library="SparkFun-FreqCtrl" deviceset="OSCILLATOR" device="SMD" value="10MHz XTAL"/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ATC4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.01uF"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3 Pin"/>
-<part name="IC2" library="analog-devices" deviceset="AD8611" device="RM" value="AD8611RM"/>
+<part name="IC2" library="analog-devices" deviceset="AD8611" device="RM" value="AD8611"/>
 <part name="GPR1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="50"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6405,9 +6405,9 @@ Typical applications:&lt;p&gt;
 <part name="ATR2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="330"/>
 <part name="ATR3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="330"/>
 <part name="ATR4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="330"/>
-<part name="D2" library="SparkFun-LED" deviceset="LED-YELLOW" device="LILYPAD" value="Yellow"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="LILYPAD" value="RED"/>
-<part name="D3" library="SparkFun-LED" deviceset="LED-GREEN" device="LILYPAD" value="GREEN"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED-YELLOW" device="LILYPAD" value="ACT"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="LILYPAD" value="ERR"/>
+<part name="D3" library="SparkFun-LED" deviceset="LED-GREEN" device="LILYPAD" value="SEND"/>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY29" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY30" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -6422,7 +6422,7 @@ Typical applications:&lt;p&gt;
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="LOCK" value="3-Pin"/>
 <part name="X2" library="SparkFun-Connectors" deviceset="DB9" device="MALE" value="DB9 Male"/>
-<part name="U$2" library="tickTockLibrary" deviceset="BME280" device="BME280-LGA"/>
+<part name="U$2" library="tickTockLibrary" deviceset="BME280" device="BME280-LGA" value="BME280"/>
 <part name="BMPC2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
 <part name="U4" library="SparkFun-Sensors" deviceset="BMP180" device=""/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6543,8 +6543,8 @@ reads from GPS_RX</text>
 </instance>
 <instance part="GND5" gate="1" x="490.22" y="383.54"/>
 <instance part="GND6" gate="1" x="513.08" y="363.22"/>
-<instance part="GPS_10MHZ_IN" gate="G$1" x="307.34" y="327.66"/>
-<instance part="GPS_1PPS_IN" gate="G$1" x="307.34" y="266.7"/>
+<instance part="GPS10MHZ" gate="G$1" x="307.34" y="327.66"/>
+<instance part="GPS1PPS" gate="G$1" x="307.34" y="266.7"/>
 <instance part="IC1" gate="G$1" x="139.7" y="144.78"/>
 <instance part="U3" gate="G$1" x="73.66" y="43.18"/>
 <instance part="JP1" gate="G$1" x="20.32" y="50.8" rot="R270"/>
@@ -6826,7 +6826,7 @@ reads from GPS_RX</text>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="378.46" y1="312.42" x2="378.46" y2="304.8" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="312.42" x2="307.34" y2="312.42" width="0.1524" layer="91"/>
-<pinref part="GPS_10MHZ_IN" gate="G$1" pin="GND"/>
+<pinref part="GPS10MHZ" gate="G$1" pin="GND"/>
 <wire x1="307.34" y1="312.42" x2="307.34" y2="322.58" width="0.1524" layer="91"/>
 <junction x="373.38" y="312.42"/>
 <junction x="378.46" y="312.42"/>
@@ -6849,7 +6849,7 @@ reads from GPS_RX</text>
 <pinref part="GPR2" gate="G$1" pin="2"/>
 <wire x1="330.2" y1="254" x2="330.2" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="251.46" x2="307.34" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="GPS_1PPS_IN" gate="G$1" pin="GND"/>
+<pinref part="GPS1PPS" gate="G$1" pin="GND"/>
 <wire x1="307.34" y1="251.46" x2="307.34" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="330.2" y1="248.92" x2="330.2" y2="251.46" width="0.1524" layer="91"/>
@@ -7188,7 +7188,7 @@ reads from GPS_RX</text>
 </net>
 <net name="GPS_1PPS" class="0">
 <segment>
-<pinref part="GPS_1PPS_IN" gate="G$1" pin="OUT"/>
+<pinref part="GPS1PPS" gate="G$1" pin="OUT"/>
 <wire x1="312.42" y1="266.7" x2="330.2" y2="266.7" width="0.1524" layer="91"/>
 <label x="347.98" y="269.24" size="1.778" layer="95"/>
 <pinref part="GPR2" gate="G$1" pin="1"/>
@@ -7204,7 +7204,7 @@ reads from GPS_RX</text>
 </net>
 <net name="GPS_10MHZ" class="0">
 <segment>
-<pinref part="GPS_10MHZ_IN" gate="G$1" pin="OUT"/>
+<pinref part="GPS10MHZ" gate="G$1" pin="OUT"/>
 <wire x1="312.42" y1="327.66" x2="373.38" y2="327.66" width="0.1524" layer="91"/>
 <label x="347.98" y="330.2" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="IN+"/>
