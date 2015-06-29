@@ -1137,9 +1137,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="MINI-DIN6">
-<wire x1="-7" y1="0" x2="-7" y2="-12.4" width="0.2032" layer="21"/>
-<wire x1="7" y1="0" x2="7" y2="-12.4" width="0.2032" layer="21"/>
-<wire x1="-7" y1="0" x2="7" y2="0" width="0.2032" layer="21"/>
+<wire x1="-7" y1="-2.54" x2="-7" y2="-12.4" width="0.2032" layer="21"/>
+<wire x1="7" y1="-2.54" x2="7" y2="-12.4" width="0.2032" layer="21"/>
 <wire x1="-7" y1="-12.4" x2="7" y2="-12.4" width="0.2032" layer="21"/>
 <wire x1="-7" y1="-1" x2="7" y2="-1" width="0.2032" layer="51"/>
 <pad name="3" x="-3.4" y="-8.5" drill="0.9"/>
@@ -1185,9 +1184,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <description>&lt;b&gt;SUB-D&lt;/b&gt;</description>
 <wire x1="-8.128" y1="15.299" x2="-7.62" y2="15.807" width="0.2032" layer="51" curve="-90"/>
 <wire x1="7.62" y1="15.807" x2="8.128" y2="15.299" width="0.2032" layer="51" curve="-90"/>
-<wire x1="-15.4" y1="-2.8" x2="-15.4" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-15.4" y1="-2.8" x2="-15.4" y2="7.62" width="0.2032" layer="21"/>
 <wire x1="-15.4" y1="2.5426" x2="-15.4" y2="9.5" width="0.2032" layer="51"/>
-<wire x1="15.4" y1="-2.8" x2="15.4" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="15.4" y1="2.54" x2="15.4" y2="9.5" width="0.2032" layer="51"/>
 <wire x1="-8.128" y1="10.219" x2="-8.128" y2="15.299" width="0.2032" layer="51"/>
 <wire x1="-8.763" y1="9.584" x2="-8.128" y2="10.219" width="0.2032" layer="51" curve="90"/>
@@ -1195,7 +1193,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="8.128" y1="10.219" x2="8.128" y2="15.299" width="0.2032" layer="51"/>
 <wire x1="8.128" y1="10.219" x2="8.763" y2="9.584" width="0.2032" layer="51" curve="90"/>
 <wire x1="-7.62" y1="15.807" x2="7.62" y2="15.807" width="0.2032" layer="51"/>
-<wire x1="-15.4" y1="-2.8" x2="15.4" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-15.4" y1="-2.8" x2="14.13" y2="-2.8" width="0.2032" layer="21"/>
 <pad name="5" x="-5.54" y="-1.42" drill="1.016" diameter="1.8796" shape="square"/>
 <pad name="4" x="-2.77" y="-1.42" drill="1.016" diameter="1.8796"/>
 <pad name="3" x="0" y="-1.42" drill="1.016" diameter="1.8796"/>
@@ -1213,9 +1211,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <package name="BNC">
 <description>Fits Mouser Part#5227161</description>
 <wire x1="-7.493" y1="-2.9718" x2="7.493" y2="-2.9718" width="0.127" layer="21"/>
-<wire x1="7.493" y1="-2.9718" x2="7.493" y2="10.8712" width="0.127" layer="21"/>
-<wire x1="7.493" y1="10.8712" x2="-7.493" y2="10.8712" width="0.127" layer="21"/>
-<wire x1="-7.493" y1="10.8712" x2="-7.493" y2="-2.9718" width="0.127" layer="21"/>
+<wire x1="7.493" y1="-2.9718" x2="7.493" y2="9.6012" width="0.127" layer="21"/>
+<wire x1="-7.493" y1="9.6012" x2="-7.493" y2="-2.9718" width="0.127" layer="21"/>
 <wire x1="-7.112" y1="10.8712" x2="-7.112" y2="19.8882" width="0.127" layer="51"/>
 <wire x1="-7.112" y1="19.8882" x2="-6.604" y2="19.8882" width="0.127" layer="51"/>
 <wire x1="-6.604" y1="19.8882" x2="6.604" y2="19.8882" width="0.127" layer="51"/>
@@ -1387,8 +1384,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-8.6" y1="6" x2="-8.6" y2="-6" width="0.2032" layer="51"/>
 <wire x1="-8.6" y1="-6" x2="-12.5" y2="-6" width="0.2032" layer="51"/>
 <wire x1="-12.5" y1="-6" x2="-12.5" y2="6" width="0.2032" layer="51"/>
-<wire x1="-8.6" y1="6" x2="-4.8" y2="6" width="0.2032" layer="21"/>
-<wire x1="-8.6" y1="-6" x2="-4.8" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-7.33" y1="6" x2="-4.8" y2="6" width="0.2032" layer="21"/>
+<wire x1="-7.33" y1="-6" x2="-4.8" y2="-6" width="0.2032" layer="21"/>
 <wire x1="-0.6" y1="-6" x2="3.3" y2="-6" width="0.2032" layer="21"/>
 <wire x1="3.3" y1="-6" x2="3.3" y2="6" width="0.2032" layer="21"/>
 <wire x1="3.3" y1="6" x2="-0.6" y2="6" width="0.2032" layer="21"/>
@@ -1435,18 +1432,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-3.81" y="0" size="0.4064" layer="27">&gt;VALUE</text>
 <hole x="0" y="2.2" drill="0.9"/>
 <hole x="0" y="-2.2" drill="0.9"/>
-</package>
-<package name="USB-A-PCB">
-<wire x1="-5" y1="6" x2="3.7" y2="6" width="0.127" layer="51"/>
-<wire x1="3.7" y1="6" x2="3.7" y2="-6" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-6" x2="-5" y2="-6" width="0.127" layer="51"/>
-<wire x1="-5" y1="-6" x2="-5" y2="6" width="0.127" layer="51"/>
-<smd name="5V" x="-0.2" y="-3.5" dx="7.5" dy="1.5" layer="1"/>
-<smd name="USB_M" x="0.3" y="-1" dx="6.5" dy="1" layer="1"/>
-<smd name="USB_P" x="0.3" y="1" dx="6.5" dy="1" layer="1"/>
-<smd name="GND" x="-0.2" y="3.5" dx="7.5" dy="1.5" layer="1"/>
-<text x="-1.27" y="5.08" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
 </package>
 <package name="USB-B-PTH-VERTICAL">
 <description>&lt;b&gt;USB Series B Hole Mounted&lt;/b&gt;</description>
@@ -2554,6 +2539,21 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="1" x="-3.81" y="5.5" dx="4" dy="1" layer="1" rot="R90"/>
 <hole x="-2.54" y="0" drill="1.4"/>
 <hole x="2.54" y="0" drill="1.4"/>
+</package>
+<package name="USB-A-PCB">
+<description>Card-edge USB A connector.
+
+For boards designed to be plugged directly into a USB slot. If possible, ensure that your PCB is about 2.4mm thick to fit snugly.</description>
+<wire x1="-5" y1="6" x2="3.7" y2="6" width="0.127" layer="51"/>
+<wire x1="3.7" y1="6" x2="3.7" y2="-6" width="0.127" layer="51"/>
+<wire x1="3.7" y1="-6" x2="-5" y2="-6" width="0.127" layer="51"/>
+<wire x1="-5" y1="-6" x2="-5" y2="6" width="0.127" layer="51"/>
+<smd name="GND" x="-0.2" y="-3.5" dx="7.5" dy="1.5" layer="1"/>
+<smd name="USB_M" x="0.3" y="-1" dx="6.5" dy="1" layer="1"/>
+<smd name="USB_P" x="0.3" y="1" dx="6.5" dy="1" layer="1"/>
+<smd name="5V" x="-0.2" y="3.5" dx="7.5" dy="1.5" layer="1"/>
+<text x="-1.27" y="5.08" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
