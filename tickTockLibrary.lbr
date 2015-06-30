@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -75,7 +75,7 @@
 <package name="MSOP08">
 <wire x1="1.624" y1="1.299" x2="1.624" y2="-1.301" width="0.2032" layer="21"/>
 <wire x1="-1.626" y1="-1.301" x2="-1.626" y2="1.299" width="0.2032" layer="21"/>
-<circle x="-0.9456" y="-0.7906" radius="0.5" width="0.0508" layer="21"/>
+<circle x="-0.9456" y="-0.7906" radius="0.254" width="0.2032" layer="21"/>
 <smd name="8" x="-0.976" y="2.112" dx="0.3" dy="1.2" layer="1"/>
 <smd name="7" x="-0.326" y="2.112" dx="0.3" dy="1.2" layer="1"/>
 <smd name="6" x="0.324" y="2.112" dx="0.3" dy="1.2" layer="1"/>
